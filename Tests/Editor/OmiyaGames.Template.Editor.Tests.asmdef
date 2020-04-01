@@ -1,0 +1,15 @@
+{
+    "name": "OmiyaGames.Template.Editor.Tests",
+    "references": [
+        "OmiyaGames.Template",
+        "OmiyaGames.Template.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}
