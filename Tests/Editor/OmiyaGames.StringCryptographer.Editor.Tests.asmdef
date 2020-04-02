@@ -1,8 +1,8 @@
 {
-    "name": "OmiyaGames.Template.Editor.Tests",
+    "name": "OmiyaGames.StringCryptographer.Editor.Tests",
     "references": [
-        "OmiyaGames.Template",
-        "OmiyaGames.Template.Editor"
+        "GUID:7f4dbb4916058a7438cc6b2e9fee8d60",
+        "GUID:b7e8df2fdeb1c1b408914e29c0849b5d"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -11,5 +11,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

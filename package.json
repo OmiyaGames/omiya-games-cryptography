@@ -4,16 +4,14 @@
   "version": "0.1.0-preview.1",
   "unity": "2019.3",
   "unityRelease": "7f1",
-  "description": "This is a template package, used as a basis to build a bigger one.",
+  "description": "String Cryptographer provides a simple interface to encrypt and decrypt text. This package uses the Rijndael bidirectional encryption algorithm.\n\nNote: Randomized passwords are generated using C#'s RNGCryptoServiceProvider.",
   "category": "Library",
-  "type": "library",
+  "type": "tool",
   "license": "MIT",
   "author": {
     "name": "Taro Omiya",
     "email": "support@omiyagames.com",
     "url": "https://www.omiyagames.com"
-  },
-  "dependencies": {
   },
   "keywords": [
     "Omiya Games",

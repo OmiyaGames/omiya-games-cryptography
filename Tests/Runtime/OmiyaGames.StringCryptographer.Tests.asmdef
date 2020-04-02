@@ -1,7 +1,7 @@
 {
-    "name": "OmiyaGames.Template.Tests",
+    "name": "OmiyaGames.StringCryptographer.Tests",
     "references": [
-        "OmiyaGames.Template"
+        "GUID:7f4dbb4916058a7438cc6b2e9fee8d60"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -10,5 +10,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }
