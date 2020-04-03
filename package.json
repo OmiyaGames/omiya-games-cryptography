@@ -1,6 +1,6 @@
 {
-  "name": "com.omiyagames.stringcyprtographer",
-  "displayName": "Omiya Games - String Cryptographer",
+  "name": "com.omiyagames.cryptography",
+  "displayName": "Omiya Games - Cryptography",
   "version": "0.1.0-preview.1",
   "unity": "2019.3",
   "unityRelease": "7f1",
@@ -16,7 +16,14 @@
   "keywords": [
     "Omiya Games",
     "Scripts",
-    "Library"
+    "Cryptography",
+    "Encryption",
+    "Encrypt",
+    "Decryption",
+    "Decrypt",
+    "Security",
+    "Serialized Object",
+    "Tools"
   ],
   "dependencies": {
     "com.omiyagames.common": "0.1.0-preview.1"
