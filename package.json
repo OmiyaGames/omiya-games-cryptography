@@ -26,7 +26,7 @@
     "Tools"
   ],
   "dependencies": {
-    "com.omiyagames.common": "0.1.0-preview.2"
+    "com.omiyagames.common": "0.1.1-preview.1"
   },
   "scopedRegistries": [
     {
