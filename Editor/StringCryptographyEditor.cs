@@ -10,7 +10,7 @@ namespace OmiyaGames.Cryptography.Editor
     /// <copyright file="StringCryptographyEditor.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
-    /// Copyright (c) 2014-2020 Omiya Games
+    /// Copyright (c) 2019-2020 Omiya Games
     /// 
     /// Permission is hereby granted, free of charge, to any person obtaining a copy
     /// of this software and associated documentation files (the "Software"), to deal
@@ -37,6 +37,26 @@ namespace OmiyaGames.Cryptography.Editor
     /// An editor script for <see cref="StringCryptographer"/>.
     /// </summary>
     /// <seealso cref="StringCryptographer"/>
+    /// <remarks>
+    /// Revision History:
+    /// <list type="table">
+    ///   <listheader>
+    ///     <description>Date</description>
+    ///     <description>Name</description>
+    ///     <description>Description</description>
+    ///   </listheader>
+    ///   <item>
+    ///     <description>2/11/2019</description>
+    ///     <description>Taro Omiya</description>
+    ///     <description>Initial version</description>
+    ///   </item>
+    ///   <item>
+    ///     <description>4/3/2020</description>
+    ///     <description>Taro Omiya</description>
+    ///     <description>Converted the class to a package.</description>
+    ///   </item>
+    /// </list>
+    /// </remarks>
     [CustomEditor(typeof(StringCryptographer), true)]
     public class StringCryptographyEditor : UnityEditor.Editor
     {
@@ -46,7 +66,7 @@ namespace OmiyaGames.Cryptography.Editor
         // Member variables
         private SerializedProperty passwordHash;
         private SerializedProperty saltKey;
-        private SerializedProperty viKey;
+        private SerializedProperty ivKey;
         private AnimBool encryptionGroup, decryptionGroup;
         private string testEncryption, testDecryption;
 
@@ -59,7 +79,7 @@ namespace OmiyaGames.Cryptography.Editor
             // Automatically fill out the fields
             newAsset.PasswordHash = StringCryptographer.GetRandomPassword(RandomPasswordLength);
             newAsset.SaltKey = StringCryptographer.GetRandomPassword(RandomPasswordLength);
-            newAsset.ViKey = StringCryptographer.GetRandomPassword(StringCryptographer.ViKeyBlockSize);
+            newAsset.IvKey = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
 
             // Setup path to file
             string folderName = AssetHelpers.GetSelectedFolder();
@@ -78,7 +98,7 @@ namespace OmiyaGames.Cryptography.Editor
             // Display all fields
             EditorGUILayout.PropertyField(passwordHash);
             EditorGUILayout.PropertyField(saltKey);
-            EditorGUILayout.PropertyField(viKey);
+            EditorGUILayout.PropertyField(ivKey);
 
             // Display a button to randomize all fields
             EditorGUILayout.Space();
@@ -86,7 +106,7 @@ namespace OmiyaGames.Cryptography.Editor
             {
                 passwordHash.stringValue = StringCryptographer.GetRandomPassword(RandomPasswordLength);
                 saltKey.stringValue = StringCryptographer.GetRandomPassword(RandomPasswordLength);
-                viKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.ViKeyBlockSize);
+                ivKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
             }
 
             // Display test encryption
@@ -132,7 +152,7 @@ namespace OmiyaGames.Cryptography.Editor
             // Grab all properties
             passwordHash = serializedObject.FindProperty("passwordHash");
             saltKey = serializedObject.FindProperty("saltKey");
-            viKey = serializedObject.FindProperty("viKey");
+            ivKey = serializedObject.FindProperty("ivKey");
 
             // Setup the animations
             encryptionGroup = new AnimBool(false, Repaint);

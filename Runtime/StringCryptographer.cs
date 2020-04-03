@@ -10,7 +10,7 @@ namespace OmiyaGames.Cryptography
     /// <copyright file="StringCryptographer.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
-    /// Copyright (c) 2014-2020 Omiya Games
+    /// Copyright (c) 2019-2020 Omiya Games
     /// 
     /// Permission is hereby granted, free of charge, to any person obtaining a copy
     /// of this software and associated documentation files (the "Software"), to deal
@@ -40,9 +40,31 @@ namespace OmiyaGames.Cryptography
     /// this forum post by Kris444.
     /// </a>
     /// </summary>
+    /// <seealso cref="RijndaelManaged"/>
+    /// <seealso cref="RNGCryptoServiceProvider"/>
+    /// <remarks>
+    /// Revision History:
+    /// <list type="table">
+    ///   <listheader>
+    ///     <description>Date</description>
+    ///     <description>Name</description>
+    ///     <description>Description</description>
+    ///   </listheader>
+    ///   <item>
+    ///     <description>2/11/2019</description>
+    ///     <description>Taro Omiya</description>
+    ///     <description>Initial version</description>
+    ///   </item>
+    ///   <item>
+    ///     <description>4/3/2020</description>
+    ///     <description>Taro Omiya</description>
+    ///     <description>Converted the class to a package. Fixing a typo in a property.</description>
+    ///   </item>
+    /// </list>
+    /// </remarks>
     public class StringCryptographer : ScriptableObject
     {
-        public const int ViKeyBlockSize = 18;
+        public const int IvKeyBlockSize = 18;
         public const string AlphaNumericChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         public const string AlphaNumericSymbolsChars = AlphaNumericChars + "!@#$%^&*-_+=?,.`~|(){}[]'\"\\/<>";
 
@@ -52,25 +74,35 @@ namespace OmiyaGames.Cryptography
         [SerializeField]
         private string saltKey;
         [SerializeField]
-        private string viKey;
+        [UnityEngine.Serialization.FormerlySerializedAs("viKey")]
+        private string ivKey;
 
         #region Properties
+        /// <summary>
+        /// A random hash used for  used for encryption.
+        /// </summary>
         public string PasswordHash
         {
             private get => passwordHash;
             set => passwordHash = value;
         }
 
+        /// <summary>
+        /// A salt to make <see cref="PasswordHash"/> less predictable.
+        /// </summary>
         public string SaltKey
         {
             private get => saltKey;
             set => saltKey = value;
         }
 
-        public string ViKey
+        /// <summary>
+        /// Initialization Vector key, used for encryption.
+        /// </summary>
+        public string IvKey
         {
-            private get => viKey;
-            set => viKey = value;
+            private get => ivKey;
+            set => ivKey = value;
         }
         #endregion
 
@@ -97,6 +129,11 @@ namespace OmiyaGames.Cryptography
             return result.ToString();
         }
 
+        /// <summary>
+        /// Encrypts a string.
+        /// </summary>
+        /// <param name="plainText">The string to encrypt.</param>
+        /// <returns>plainText, encrypted.</returns>
         public string Encrypt(string plainText)
         {
             byte[] plainTextBytes = Encoding.UTF8.GetBytes(plainText);
@@ -107,7 +144,7 @@ namespace OmiyaGames.Cryptography
                 Mode = CipherMode.CBC,
                 Padding = PaddingMode.Zeros
             };
-            ICryptoTransform encryptor = symmetricKey.CreateEncryptor(keyBytes, Encoding.ASCII.GetBytes(ViKey));
+            ICryptoTransform encryptor = symmetricKey.CreateEncryptor(keyBytes, Encoding.ASCII.GetBytes(IvKey));
 
             byte[] cipherTextBytes;
 
@@ -125,6 +162,11 @@ namespace OmiyaGames.Cryptography
             return Convert.ToBase64String(cipherTextBytes);
         }
 
+        /// <summary>
+        /// Decrypts an encrypted string.
+        /// </summary>
+        /// <param name="encryptedText">String to decrypt.</param>
+        /// <returns>Decrypted string.</returns>
         public string Decrypt(string encryptedText)
         {
             byte[] cipherTextBytes = Convert.FromBase64String(encryptedText);
@@ -135,7 +177,7 @@ namespace OmiyaGames.Cryptography
                 Padding = PaddingMode.None
             };
 
-            ICryptoTransform decryptor = symmetricKey.CreateDecryptor(keyBytes, Encoding.ASCII.GetBytes(ViKey));
+            ICryptoTransform decryptor = symmetricKey.CreateDecryptor(keyBytes, Encoding.ASCII.GetBytes(IvKey));
             MemoryStream memoryStream = new MemoryStream(cipherTextBytes);
             CryptoStream cryptoStream = new CryptoStream(memoryStream, decryptor, CryptoStreamMode.Read);
             byte[] plainTextBytes = new byte[cipherTextBytes.Length];
