@@ -1,7 +1,9 @@
 {
-    "name": "OmiyaGames.StringCryptographer.Editor",
+    "name": "OmiyaGames.Cryptography.Editor",
     "references": [
-        "GUID:7f4dbb4916058a7438cc6b2e9fee8d60"
+        "OmiyaGames",
+        "OmiyaGames.Common.Editor",
+        "OmiyaGames.Cryptography"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

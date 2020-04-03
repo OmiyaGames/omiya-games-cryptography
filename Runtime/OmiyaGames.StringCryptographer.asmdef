@@ -1,6 +1,8 @@
 {
-    "name": "OmiyaGames.StringCryptographer",
-    "references": [],
+    "name": "OmiyaGames.Cryptography",
+    "references": [
+        "OmiyaGames"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

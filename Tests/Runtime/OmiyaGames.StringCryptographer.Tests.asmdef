@@ -1,7 +1,7 @@
 {
-    "name": "OmiyaGames.StringCryptographer.Tests",
+    "name": "OmiyaGames.Cryptography.Tests",
     "references": [
-        "GUID:7f4dbb4916058a7438cc6b2e9fee8d60"
+        "OmiyaGames.Cryptography"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

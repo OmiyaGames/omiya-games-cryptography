@@ -18,11 +18,17 @@
     "Scripts",
     "Library"
   ],
-  "samples": [
+  "dependencies": {
+    "com.omiyagames.common": "0.1.0-preview.1"
+  },
+  "scopedRegistries": [
     {
-      "displayName": "Example 1",
-      "description": "This sample is just an example",
-      "path": "Samples~/Example1"
+      "name": "package.openupm.com",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "com.omiyagames.common",
+        "com.openupm"
+      ]
     }
   ]
 }
