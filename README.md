@@ -1,6 +1,6 @@
 # [Omiya Games](https://www.omiyagames.com/) - Cryptography
 
-[![openupm](https://img.shields.io/npm/v/com.omiyagames.cryptography?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.cryptography/)
+[![openupm](https://img.shields.io/npm/v/com.omiyagames.cryptography?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.cryptography/) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I51KS8F)
 
 A collection of tools to encrypt and decrypt various things. Currently, only strings -- via [`StringCryptographer`](/Runtime/StringCryptographer.cs) -- are supported.
 
