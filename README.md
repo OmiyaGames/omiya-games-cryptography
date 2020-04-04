@@ -2,7 +2,7 @@
 
 [![openupm](https://img.shields.io/npm/v/com.omiyagames.cryptography?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.cryptography/)
 
-Common scripts used within [Omiya Games](https://www.omiyagames.com/)' many tools and libraries.
+A collection of tools to encrypt and decrypt various things. Currently, only strings -- via [`StringCryptographer`](/Runtime/StringCryptographer.cs) -- are supported.
 
 ## Install
 
