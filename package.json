@@ -26,6 +26,7 @@
     "Tools"
   ],
   "dependencies": {
+    "com.unity.ext.nunit": "1.0.0",
     "com.omiyagames.common": "0.1.1-preview.1"
   },
   "scopedRegistries": [
