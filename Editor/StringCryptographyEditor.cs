@@ -61,7 +61,6 @@ namespace OmiyaGames.Cryptography.Editor
     public class StringCryptographyEditor : UnityEditor.Editor
     {
         public const string DefaultFileName = "New Cryptographer" + Helpers.FileExtensionScriptableObject;
-        public const int RandomPasswordLength = 32;
 
         // Member variables
         private SerializedProperty passwordHash;
@@ -71,15 +70,10 @@ namespace OmiyaGames.Cryptography.Editor
         private string testEncryption, testDecryption;
 
         [MenuItem("Assets/Create/Omiya Games/Cryptographer", priority = 203)]
-        private static void CreateSupportedLanguages()
+        private static void CreateCryptographer()
         {
             // Setup asset
             StringCryptographer newAsset = CreateInstance<StringCryptographer>();
-
-            // Automatically fill out the fields
-            newAsset.PasswordHash = StringCryptographer.GetRandomPassword(RandomPasswordLength);
-            newAsset.SaltKey = StringCryptographer.GetRandomPassword(RandomPasswordLength);
-            newAsset.IvKey = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
 
             // Setup path to file
             string folderName = AssetHelpers.GetSelectedFolder();
@@ -104,8 +98,8 @@ namespace OmiyaGames.Cryptography.Editor
             EditorGUILayout.Space();
             if (GUILayout.Button("Randomize all fields") == true)
             {
-                passwordHash.stringValue = StringCryptographer.GetRandomPassword(RandomPasswordLength);
-                saltKey.stringValue = StringCryptographer.GetRandomPassword(RandomPasswordLength);
+                passwordHash.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
+                saltKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
                 ivKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
             }
 
