@@ -3,7 +3,7 @@
   "displayName": "Omiya Games - Cryptography",
   "version": "0.1.0-preview.1",
   "unity": "2019.3",
-  "unityRelease": "7f1",
+  "unityRelease": "10f1",
   "description": "A package containing cryptography tool(s). Right now, it only contains one tool: the String Cryptographer, which provides a simple interface to encrypt and decrypt text.\n\nNote: String Cryptographer uses the Rijndael bidirectional encryption algorithm. Fields can be randomized using C#'s RNGCryptoServiceProvider.",
   "category": "Tool",
   "type": "tool",
@@ -27,7 +27,7 @@
   ],
   "dependencies": {
     "com.unity.ext.nunit": "1.0.0",
-    "com.omiyagames.common": "0.1.1-preview.1"
+    "com.omiyagames.common": "0.1.2-preview.1"
   },
   "scopedRegistries": [
     {
