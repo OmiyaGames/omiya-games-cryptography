@@ -5,9 +5,8 @@ using System.Collections;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using OmiyaGames.Cryptography;
 
-namespace OmiyaGames.Domain
+namespace OmiyaGames.Cryptography
 {
     ///-----------------------------------------------------------------------
     /// <copyright file="DomainList.cs" company="Omiya Games">

@@ -5,9 +5,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using OmiyaGames.Common.Editor;
-using OmiyaGames.Cryptography;
 
-namespace OmiyaGames.Domain.Editor
+namespace OmiyaGames.Cryptography.Editor
 {
     ///-----------------------------------------------------------------------
     /// <copyright file="DomainListAssetBundleGenerator.cs" company="Omiya Games">
