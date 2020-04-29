@@ -29,6 +29,7 @@ An AssetBundle that stores a list of encrypted strings, such as a list of accept
 
 For more details, check out the references below:
 - [Documentation](/Documentation~/DomainList.md)
+- [Doxygen-generated doc](/Documentation~/html/class_omiya_games_1_1_cryptography_1_1_domain_list.html)
 - [Source code](/Runtime/DomainList.cs)
 
 ## Install
@@ -47,4 +48,4 @@ Full documentation is available at the [`Documentation~`](/Documentation~/Crypto
 
 Overall package is licensed under [MIT](/LICENSE.md), unless otherwise noted in the [3rd party licenses](/THIRD%20PARTY%20NOTICES.md) file and/or source code.
 
-Copyright (c) 2019-2020 Omiya Games
+Copyright (c) 2016-2020 Omiya Games

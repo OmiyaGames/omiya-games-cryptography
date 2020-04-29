@@ -61,21 +61,26 @@ namespace OmiyaGames.Cryptography.Editor
     public class DomainListAssetBundleGenerator : EditorWindow
     {
         const string BundleId = "domains";
-        const string HelpMessage = "What is a Domain List Asset?\n\n" +
-            "It's an asset bundle containing a list of domains the WebLocationChecker script uses" +
-            " to check if the domain of the website the WebGL build is running in is an accepted" +
-            " host or not. Since Asset Bundles are serialized, and thus, harder to edit, it " +
-            "creates a more secure method for developers to change the list of approved domains" +
-            " on-the-fly while making it harder for others to change it.";
-        const string TestErrorInvalidFileMessage = "Unable to read file. Is it really an Asset Bundle?";
-        const string TestErrorInvalidAssetMessage = "Was able to read the Asset Bundle, but the asset contained in it was not an AcceptedDomainList object.";
-        const string TestEmptyWarningMessage = "Was able to read the Asset Bundle, but the asset contained in it was not an AcceptedDomainList object.";
+        const string HelpMessage = "What is a Domain List?\n\n" +
+            "It's an Asset Bundle containing a ScriptableObject, containing a list of" +
+            " strings, optionally encrypted with String Cryptographer. Since Asset Bundles" +
+            " are serialized, and thus, harder to edit, it's a more secure method of" +
+            " storing text, especially if encrypted. Intended to be used in conjunction" +
+            " with security features, such as a script verifying the web domain a" +
+            " Unity WebGL game is hosted on by downloading and reading a list from a file.";
+        const string TestErrorInvalidFileMessage =
+            "Unable to read file. Is it really an Asset Bundle?";
+        const string TestErrorInvalidAssetMessage = "Was able to read the Asset Bundle," +
+            " but the asset contained in it was not a DomainList ScriptableObject.";
+        const string TestEmptyWarningMessage = "Was able to read the Asset Bundle, but" +
+            " the asset contained in it had no content.";
         const string TestInfoMessage = "Asset Bundle contains the following domains:";
-        const string EditMessage = "Updated information in the section below. Just edit the details, and click \"Generate\"!";
+        const string EditMessage = "Updated information in the section below. " +
+            "Just edit the details, and click \"Generate\"!";
 
-        string nameOfFile = BundleId, nameOfFolder = "Assets/WebGLTemplates/Embedding/AcceptedDomains", testResult = null;
+        string nameOfFile = BundleId, nameOfFolder = "Assets", testResult = null;
         MessageType testResultType = MessageType.None;
-        bool toggleGenerateArea = true, toggleTestArea = true;
+        bool toggleGenerateArea = true, toggleTestArea = false;
         Object testAsset = null, lastTestAsset = null;
         List<string> allDomains = new List<string> { "localhost", "build.cloud.unity3d.com" };
         ReorderableList allDomainsField = null;
@@ -90,10 +95,10 @@ namespace OmiyaGames.Cryptography.Editor
             }
         }
 
-        [MenuItem("Window/Omiya Games - Domain List Generator")]
+        [MenuItem("Window/Omiya Games/Domain List")]
         static void Initialize()
         {
-            DomainListAssetBundleGenerator window = GetWindow<DomainListAssetBundleGenerator>(title: "Domain List Generator");
+            DomainListAssetBundleGenerator window = GetWindow<DomainListAssetBundleGenerator>(title: "Domain List");
             window.Show();
         }
 
@@ -141,7 +146,7 @@ namespace OmiyaGames.Cryptography.Editor
         {
             // Setup toggle
             toggleGenerateArea = true;
-            toggleTestArea = true;
+            toggleTestArea = false;
 
             // Setup Reordable list
             allDomainsField = new ReorderableList(allDomains, typeof(string), true, true, true, true);
