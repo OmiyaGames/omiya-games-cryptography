@@ -18,7 +18,7 @@ At this point, the asset is ready to use! All the fields are randomly generated,
 
 ### Editing the asset
 
-The passwords held in the file can be customized by clicking on the asset in the Project window, and making the edits in the Inspector window.
+The passwords held in the file can be customized by clicking on the asset in the Project window, and making the edits in the Inspector window. Alternatively, click on "Randomize all fields" button to replace all fields with a new random string.
 
 ![Inspector](/Documentation~/images/stringCryptographer/inspector.png)
 
