@@ -4,13 +4,32 @@
 
 A collection of tools to encrypt and decrypt various things. This includes:
 
-### [`StringCryptographer`](/Runtime/StringCryptographer.cs)
+### [String Cryptographer](/Documentation~/StringCryptographer.md)
 
-A ScriptableObject that encrypts and decrypts a string. Can be made into an asset.
+An asset that encrypts and decrypts texts. Using the asset in script is super-easy:
 
-### [`DomainList`](/Runtime/DomainList.cs)
+```csharp
+// Encrypt the text
+string encryptedText = encrypter.Encrypt(text);
 
-An Asset Bundle that stores a list of encrypted strings, such as a list of acceptable web host domains.
+// Print on the console
+Debug.Log(text + " encrypted is: " + encryptedText);
+```
+
+As a ScriptableObject, it can be constructed within a script as well.
+
+For more details, check out the references below:
+- [Documentation](/Documentation~/StringCryptographer.md)
+- [Doxygen-generated doc](/Documentation~/html/class_omiya_games_1_1_cryptography_1_1_string_cryptographer.html)
+- [Source code](/Runtime/StringCryptographer.cs)
+
+### [Domain List](/Documentation~/DomainList.md)
+
+An AssetBundle that stores a list of encrypted strings, such as a list of acceptable web host domains. This package provides a dialog to create, read, and edit these files.
+
+For more details, check out the references below:
+- [Documentation](/Documentation~/DomainList.md)
+- [Source code](/Runtime/DomainList.cs)
 
 ## Install
 
@@ -22,7 +41,7 @@ openupm add com.omiyagames.cryptography
 
 ## Documentation
 
-See [documentation](/Documentation~/Cryptography.md) and [change log](/CHANGELOG.md).
+Full documentation is available at the [`Documentation~`](/Documentation~/Cryptography.md) directory. For changes made between versions, check out the [`CHANGELOG.md`](/CHANGELOG.md).
 
 ## LICENSE
 
