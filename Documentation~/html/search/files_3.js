@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['stringcryptographer_2ecs',['StringCryptographer.cs',['../_string_cryptographer_8cs.html',1,'']]],
-  ['stringcryptographyeditor_2ecs',['StringCryptographyEditor.cs',['../_string_cryptography_editor_8cs.html',1,'']]]
+  ['readme_2emd_69',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
 ];
