@@ -16,17 +16,45 @@ This should make the following window pop-up.
 
 ![Default Window](/Documentation~/images/domainList/defaultWindow.png)
 
-### Creating the asset
+### Creating an asset bundle
 
-TODO: Fill in process of creating an asset below!
+Once the window is open, to start creating a Domain List, simply fill out the following fields:
+
+1. (Optional) Set the Encrypter field to a String Encrypter in the Project window.
+2. Expand "Generate Domain List Asset" foldout if it isn't already by clicking on it. Under "All Accepted Domains" list, add the plain-text strings to store in the asset bundle.
+3. Fill out the the two fields to indicate where the file should be created:
+    1. "Name of folder" field should contain a path relative to the root of the project e.g. `Assets/FolderName`. Note Unity expects '/' as the folder divider, regardless of operating system.
+    2. "Name of asset to generate" will set the name of the new file.
+
+![Asset Setup](/Documentation~/images/domainList/generateAsset.png)
+
+Once all the fields are filled in, click "Generate Domain List Asset" to create the asset. This can take a few minutes.
+
+![Asset Created!](/Documentation~/images/domainList/createdAsset.png)
 
 Note: the process of making this simpler is being investigated.  See: [Github Issue #5](https://github.com/OmiyaGames/omiya-games-cryptography/issues/5)
 
-### Editing the asset
+### Reading and editing an asset bundle
 
-TODO: Fill in process of editing an asset below!
+In the same window, fill out the following fields:
+1. (Optional) Set the Encrypter field to a String Encrypter in the Project window.
+2. Expand "REad Domain List Asset" foldout if it isn't already by clicking on it. Drag-and-drop from the Project window the Domain List you want to edit or read.
 
-Note: the process of making this simpler is being investigated.  See: [Github Issue #5](https://github.com/OmiyaGames/omiya-games-cryptography/issues/5)
+![Loading Domain List](/Documentation~/images/domainList/loadAsset.png)
+
+If you click on "Read Domain List Asset," a message bubble will show up at the bottom of the foldout, providing a list of strings the Domain List holds (if it was able to be read successfully).
+
+![REading Domain List](/Documentation~/images/domainList/readAsset.png)
+
+If you click on "Edit Domain List Asset," the fields in the "Generate Domain List Asset" foldout will now be populated with the information contained in the domain list. Simply expand that foldout, make the edits needed, then click "Generate Domain List Asset."
+
+![Editing Domain List](/Documentation~/images/domainList/editAsset.png)
+
+Note #1: if you try to overwrite an existing file, the dialog will warn you so, and ask if you want to confirm this action. Obviously, click "Yes" will prompt the dialog to overwrite the file.
+
+![Overwrite Confirmation](/Documentation~/images/domainList/overwrite.png)
+
+Note #2: the process of making this simpler is being investigated.  See: [Github Issue #5](https://github.com/OmiyaGames/omiya-games-cryptography/issues/5)
 
 ## Additional Resources
 
