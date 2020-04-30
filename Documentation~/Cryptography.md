@@ -12,6 +12,7 @@ Using the asset in script is super-easy:
 
 ```csharp
 // Create a new cryptographer with random password, hash key, etc.
+// StringCryptographer can also be an inspector variable.
 StringCryptographer encrypter = new StringCryptographer();
 
 // Encrypt the text
@@ -20,8 +21,6 @@ string encryptedText = encrypter.Encrypt(text);
 // Print on the console
 Debug.Log(text + " encrypted is: " + encryptedText);
 ```
-
-As a ScriptableObject, it can be constructed within a script as well.
 
 For more details, check out the references below:
 - [Documentation](/Documentation~/StringCryptographer.md)
@@ -34,7 +33,7 @@ Domain List is a binary file that stores a list of strings, such as a list of ac
 
 ![Default Window](/Documentation~/images/domainList/defaultWindow.png)
 
-For more details, check out the references below:
+For security reasons, typical read operation of a Domain List is a bit more involved. For more details, check out the references below:
 - [Documentation](/Documentation~/DomainList.md)
 - [Doxygen-generated doc](/Documentation~/html/class_omiya_games_1_1_cryptography_1_1_domain_list.html)
 - [Source code](/Runtime/DomainList.cs)

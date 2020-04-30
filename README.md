@@ -6,17 +6,23 @@ A collection of tools to encrypt and decrypt various things. This includes:
 
 ### [String Cryptographer](/Documentation~/StringCryptographer.md)
 
-An asset that encrypts and decrypts texts. Using the asset in script is super-easy:
+An asset that encrypts and decrypts texts.
+
+![Inspector](/Documentation~/images/stringCryptographer/inspector.png)
+
+Using the asset in script is super-easy:
 
 ```csharp
+// Create a new cryptographer with random password, hash key, etc.
+// StringCryptographer can also be an inspector variable.
+StringCryptographer encrypter = new StringCryptographer();
+
 // Encrypt the text
 string encryptedText = encrypter.Encrypt(text);
 
 // Print on the console
 Debug.Log(text + " encrypted is: " + encryptedText);
 ```
-
-As a ScriptableObject, it can be constructed within a script as well.
 
 For more details, check out the references below:
 - [Documentation](/Documentation~/StringCryptographer.md)
@@ -25,7 +31,9 @@ For more details, check out the references below:
 
 ### [Domain List](/Documentation~/DomainList.md)
 
-An AssetBundle that stores a list of encrypted strings, such as a list of acceptable web host domains. This package provides a dialog to create, read, and edit these files.
+Domain List is a binary file that stores a list of strings, such as a list of acceptable web host domains. This package provides a dialog to create, read, and edit these files.
+
+![Default Window](/Documentation~/images/domainList/defaultWindow.png)
 
 For security reasons, typical read operation of a Domain List is a bit more involved. For more details, check out the references below:
 - [Documentation](/Documentation~/DomainList.md)
