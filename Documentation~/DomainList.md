@@ -56,6 +56,75 @@ Note #1: if you try to overwrite an existing file, the dialog will warn you so, 
 
 Note #2: the process of making this simpler is being investigated.  See: [Github Issue #5](https://github.com/OmiyaGames/omiya-games-cryptography/issues/5)
 
+## Using the asset in a script
+
+Loading a Domain List in a scripts does require a little work. The example below indicates how to load an AssetBundle asynchronously using a user-defined file name, followed by retrieving a DomainList from that AssetBundle via a helper function:
+
+```csharp
+using UnityEngine;
+using System.Collections;
+using System.IO;
+
+// This using is necessary to support Domain List
+using OmiyaGames.Cryptography;
+
+public class SampleDomainList : MonoBehaviour
+{
+    // Inspector variables necessary to load a Domain List
+    [SerializeField]
+    private string assetName;
+    [SerializeField]
+    private StringCryptographer decrypter;
+
+    // Start is called before the first frame update
+    IEnumerator Start()
+    {
+        // Asyncrhonously load the asset bundle
+        AssetBundleCreateRequest bundleLoadRequest = AssetBundle.LoadFromFileAsync(Path.Combine(Application.streamingAssetsPath, assetName));
+        yield return bundleLoadRequest;
+
+        // Confirm an asset bundle was successfully loaded
+        AssetBundle myAssetBundle = bundleLoadRequest.assetBundle;
+        if (myAssetBundle == null)
+        {
+            Debug.Log("Failed to load AssetBundle!");
+
+            // Halt Start
+            yield break;
+        }
+
+        // Attempt to load the Domain List from the asset bundle
+        DomainList list = DomainList.Get(myAssetBundle);
+        if (list == null)
+        {
+            Debug.Log("Failed to load DomainList!");
+
+            // Unload the entire asset bundle
+            myAssetBundle.Unload(false);
+
+            // Halt Start
+            yield break;
+        }
+
+        // If successfully loaded, decrypt all the strings stored in the asset
+        foreach(string encryptedString in list)
+        {
+            Debug.Log(decrypter.Decrypt(encryptedString));
+        }
+
+        // Note: this loop below does the same thing as the one above;
+        // DomainList is just a read-only IList<string>, after all.
+        for (int index = 0; index < list.Count; ++index)
+        {
+            Debug.Log(decrypter.Decrypt(list[index]));
+        }
+
+        // Unload the entire asset bundle
+        myAssetBundle.Unload(false);
+    }
+}
+```
+
 ## Additional Resources
 
 - [Doxygen-generated doc](/Documentation~/html/class_omiya_games_1_1_cryptography_1_1_domain_list.html)
