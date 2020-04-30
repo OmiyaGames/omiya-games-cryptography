@@ -64,6 +64,7 @@ namespace OmiyaGames.Cryptography
     /// </remarks>
     public class StringCryptographer : ScriptableObject
     {
+        public const int DefaultPasswordLength = 32;
         public const int IvKeyBlockSize = 18;
         public const string AlphaNumericChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         public const string AlphaNumericSymbolsChars = AlphaNumericChars + "!@#$%^&*-_+=?,.`~|(){}[]'\"\\/<>";
@@ -76,6 +77,61 @@ namespace OmiyaGames.Cryptography
         [SerializeField]
         [UnityEngine.Serialization.FormerlySerializedAs("viKey")]
         private string ivKey;
+
+        /// <summary>
+        /// Generates a <see cref="StringCryptographer"/> with
+        /// all fields set.
+        /// </summary>
+        /// <param name="passwordHash">Sets <see cref="PasswordHash"/></param>
+        /// <param name="saltKey">Sets <see cref="SaltKey"/></param>
+        /// <param name="ivKey">Sets <see cref="IvKey"/></param>
+        public StringCryptographer(string passwordHash, string saltKey, string ivKey)
+        {
+            PasswordHash = passwordHash;
+            SaltKey = saltKey;
+            IvKey = ivKey;
+        }
+
+        /// <summary>
+        /// Generates a <see cref="StringCryptographer"/> with <see cref="PasswordHash"/> and <see cref="SaltKey"/> set.
+        /// All other fields are randomized using <see cref="GetRandomPassword(int, string)"/>.
+        /// </summary>
+        /// <param name="passwordHash">Sets <see cref="PasswordHash"/></param>
+        /// <param name="saltKey">Sets <see cref="SaltKey"/></param>
+        public StringCryptographer(string passwordHash, string saltKey) : this(passwordHash , saltKey , GetRandomPassword(IvKeyBlockSize))
+        { }
+
+        /// <summary>
+        /// Generates a <see cref="StringCryptographer"/> with <see cref="PasswordHash"/> set.
+        /// All other fields are randomized using <see cref="GetRandomPassword(int, string)"/>.
+        /// </summary>
+        /// <param name="passwordHash">Sets <see cref="PasswordHash"/></param>
+        /// <param name="saltKeyLength">Length of <see cref="SaltKey"/></param>
+        public StringCryptographer(string passwordHash, int saltKeyLength) : this(passwordHash, GetRandomPassword(saltKeyLength))
+        { }
+
+        /// <summary>
+        /// Generates a <see cref="StringCryptographer"/> with <see cref="PasswordHash"/> set.
+        /// All other fields are randomized using <see cref="GetRandomPassword(int, string)"/>.
+        /// </summary>
+        /// <param name="passwordHash">Sets <see cref="PasswordHash"/></param>
+        public StringCryptographer(string passwordHash) : this(passwordHash, DefaultPasswordLength)
+        { }
+
+        /// <summary>
+        /// Generates a <see cref="StringCryptographer"/> with
+        /// a randomized value for every field, using <see cref="GetRandomPassword(int, string)"/>.
+        /// </summary>
+        /// <param name="passwordLength">The string length of <see cref="PasswordHash"/> and <see cref="SaltKey"/></param>
+        public StringCryptographer(int passwordLength) : this(GetRandomPassword(passwordLength))
+        { }
+
+        /// <summary>
+        /// Generates a <see cref="StringCryptographer"/> with
+        /// a randomized value for every field, using <see cref="GetRandomPassword(int, string)"/>.
+        /// </summary>
+        public StringCryptographer() : this(DefaultPasswordLength)
+        {  }
 
         #region Properties
         /// <summary>

@@ -5,7 +5,9 @@
         "OmiyaGames.Common.Editor",
         "OmiyaGames.Cryptography"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
