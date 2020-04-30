@@ -116,8 +116,12 @@ namespace OmiyaGames.Cryptography.Editor
         {
             DomainList newAsset = DomainList.Generate(nameOfFile, allDomains, encrypter);
 
+            // Create a temporary file name
+            int tempFileId = Random.Range(0, 99999999);
+            string tempFileName = BundleId + tempFileId.ToString("00000000");
+
             // Generate the asset bundle
-            AssetHelpers.SaveAsAssetBundle(newAsset, nameOfFolder, nameOfFile, BundleId, new StringBuilder(), relativeToProject, overwriteFile);
+            AssetHelpers.SaveAsAssetBundle(newAsset, nameOfFolder, nameOfFile, tempFileName, new StringBuilder(), relativeToProject, overwriteFile);
             return newAsset;
         }
 
