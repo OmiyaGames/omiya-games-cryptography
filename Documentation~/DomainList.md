@@ -44,7 +44,7 @@ In the same window, fill out the following fields:
 
 If you click on "Read Domain List Asset," a message bubble will show up at the bottom of the foldout, providing a list of strings the Domain List holds (if it was able to be read successfully).
 
-![REading Domain List](/Documentation~/images/domainList/readAsset.png)
+![Reading Domain List](/Documentation~/images/domainList/readAsset.png)
 
 If you click on "Edit Domain List Asset," the fields in the "Generate Domain List Asset" foldout will now be populated with the information contained in the domain list. Simply expand that foldout, make the edits needed, then click "Generate Domain List Asset."
 
