@@ -27,7 +27,7 @@ For more details, check out the references below:
 
 An AssetBundle that stores a list of encrypted strings, such as a list of acceptable web host domains. This package provides a dialog to create, read, and edit these files.
 
-For more details, check out the references below:
+For security reasons, typical read operation of a Domain List is a bit more involved. For more details, check out the references below:
 - [Documentation](/Documentation~/DomainList.md)
 - [Doxygen-generated doc](/Documentation~/html/class_omiya_games_1_1_cryptography_1_1_domain_list.html)
 - [Source code](/Runtime/DomainList.cs)

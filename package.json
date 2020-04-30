@@ -26,6 +26,7 @@
     "Security",
     "ScriptableObject",
     "Domain List",
+    "String Cryptographer",
     "Tools"
   ],
   "dependencies": {

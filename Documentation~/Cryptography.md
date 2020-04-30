@@ -4,9 +4,16 @@ This package provides the following cyrptography tools:
 
 ### [String Cryptographer](/Documentation~/StringCryptographer.md)
 
-An asset that encrypts and decrypts texts. Using the asset in script is super-easy:
+An asset that encrypts and decrypts texts.
+
+![Inspector](/Documentation~/images/stringCryptographer/inspector.png)
+
+Using the asset in script is super-easy:
 
 ```csharp
+// Create a new cryptographer with random password, hash key, etc.
+StringCryptographer encrypter = new StringCryptographer();
+
 // Encrypt the text
 string encryptedText = encrypter.Encrypt(text);
 
@@ -24,6 +31,8 @@ For more details, check out the references below:
 ### [Domain List](/Documentation~/DomainList.md)
 
 Domain List is a binary file that stores a list of strings, such as a list of acceptable web host domains. This package provides a dialog to create, read, and edit these files.
+
+![Default Window](/Documentation~/images/domainList/defaultWindow.png)
 
 For more details, check out the references below:
 - [Documentation](/Documentation~/DomainList.md)
