@@ -2,43 +2,24 @@
 
 This package provides the following cyrptography tools:
 
-### [String Cryptographer](/Documentation~/StringCryptographer.md)
+### [String Cryptographer](https://omiyagames.github.io/omiya-games-cryptography/manual/string-cryptographer.html)
+
+![Inspector](https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/inspector.png)
 
 An asset that encrypts and decrypts texts.
 
-![Inspector](/Documentation~/images/stringCryptographer/inspector.png)
+- [Documentation](https://omiyagames.github.io/omiya-games-cryptography/manual/string-cryptographer.html)
+- [Source code](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Runtime/StringCryptographer.cs)
 
-Using the asset in script is super-easy:
+### [Domain List](https://omiyagames.github.io/omiya-games-cryptography/manual/domain-list.html)
 
-```csharp
-// Create a new cryptographer with random password, hash key, etc.
-// StringCryptographer can also be an inspector variable.
-StringCryptographer encrypter = new StringCryptographer();
-
-// Encrypt the text
-string encryptedText = encrypter.Encrypt(text);
-
-// Print on the console
-Debug.Log(text + " encrypted is: " + encryptedText);
-```
-
-For more details, check out the references below:
-- [Documentation](/Documentation~/StringCryptographer.md)
-- [Doxygen-generated doc](/Documentation~/html/class_omiya_games_1_1_cryptography_1_1_string_cryptographer.html)
-- [Source code](/Runtime/StringCryptographer.cs)
-
-### [Domain List](/Documentation~/DomainList.md)
+![Default Window](https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/default-window.png)
 
 Domain List is a binary file that stores a list of strings, such as a list of acceptable web host domains. This package provides a dialog to create, read, and edit these files.
 
-![Default Window](/Documentation~/images/domainList/defaultWindow.png)
+- [Documentation](https://omiyagames.github.io/omiya-games-cryptography/manual/domain-list.md)
+- [Source code](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Runtime/DomainList.cs)
 
-For security reasons, typical read operation of a Domain List is a bit more involved. For more details, check out the references below:
-- [Documentation](/Documentation~/DomainList.md)
-- [Doxygen-generated doc](/Documentation~/html/class_omiya_games_1_1_cryptography_1_1_domain_list.html)
-- [Source code](/Runtime/DomainList.cs)
+## LICENSE
 
-## Doxygen-Generated Source Code Documentation
-
-A Doxygen-generated documentation based on the source code for each tool is available at:
-[Documentation~/html/annotated.html](/Documentation~/html/annotated.html)
+Overall package is licensed under [MIT](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/LICENSE.md), unless otherwise noted in the [3rd party licenses](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/THIRD%20PARTY%20NOTICES.md) file and/or source code.
