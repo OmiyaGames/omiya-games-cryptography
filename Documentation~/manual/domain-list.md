@@ -127,5 +127,6 @@ public class SampleDomainList : MonoBehaviour
 
 ## Additional Resources
 
+- [`DomainList.cs` API documentation](https://omiyagames.github.io/omiya-games-cryptography/api/OmiyaGames.Cryptography.DomainList.html)
 - [`DomainList.cs` source code](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Runtime/DomainList.cs)
 - [`DomainListAssetBundleGenerator.cs` source code (the dialog box)](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Editor/DomainListAssetBundleGenerator.cs)

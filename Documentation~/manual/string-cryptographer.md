@@ -128,5 +128,6 @@ Debug.Log(encryptedText + " decrypted is: " + decryptedText);
 
 ## Additional Resources
 
+- [`StringCryptographer.cs` API documentation](https://omiyagames.github.io/omiya-games-cryptography/api/OmiyaGames.Cryptography.StringCryptographer.html)
 - [`StringCryptographer.cs` source code](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Runtime/StringCryptographer.cs)
 - [`StringCryptographyEditor.cs` source code (generates the inspector editor)](https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Editor/StringCryptographyEditor.cs)
