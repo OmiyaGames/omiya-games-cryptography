@@ -1,0 +1,16 @@
+apiRules:
+- include:
+    # Including the OmiyaGames.Web.Embed.Editor namespace
+    uidRegex: ^OmiyaGames\.Cryptography$
+    type: Namespace
+- include:
+    # Including the OmiyaGames.Web.Embed.Editor namespace
+    uidRegex: ^OmiyaGames\.Cryptography\.Editor$
+    type: Namespace
+- include:
+    uidRegex: ^Global
+    type: Namespace
+- exclude:
+    # Taro Omiya: note that I'm ignoring namespaces containing unit tests on purpooses
+    uidRegex: .*
+    type: Namespace
