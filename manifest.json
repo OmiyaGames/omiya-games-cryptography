@@ -167,6 +167,160 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/context-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/context-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/created-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/created-asset.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/default-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/default-window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/edit-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/edit-asset.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/generate-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/generate-asset.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/load-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/load-asset.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/overwrite.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/overwrite.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/domain-list/read-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/domain-list/read-asset.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/string-cryptographer/context-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/string-cryptographer/context-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/string-cryptographer/enter-file-name.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/string-cryptographer/enter-file-name.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/string-cryptographer/inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/string-cryptographer/inspector.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/string-cryptographer/save-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/string-cryptographer/save-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/string-cryptographer/script.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/string-cryptographer/script.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/string-cryptographer/test-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/string-cryptographer/test-asset.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -200,6 +354,13 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
