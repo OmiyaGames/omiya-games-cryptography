@@ -1,0 +1,415 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: OmiyaGames.Cryptography
+  name: OmiyaGames.Cryptography
+  href: api/OmiyaGames.Cryptography.html
+  commentId: N:OmiyaGames.Cryptography
+  fullName: OmiyaGames.Cryptography
+  nameWithType: OmiyaGames.Cryptography
+- uid: OmiyaGames.Cryptography.DomainList
+  name: DomainList
+  href: api/OmiyaGames.Cryptography.DomainList.html
+  commentId: T:OmiyaGames.Cryptography.DomainList
+  fullName: OmiyaGames.Cryptography.DomainList
+  nameWithType: DomainList
+- uid: OmiyaGames.Cryptography.DomainList.Add(System.String)
+  name: Add(String)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Add_System_String_
+  commentId: M:OmiyaGames.Cryptography.DomainList.Add(System.String)
+  fullName: OmiyaGames.Cryptography.DomainList.Add(System.String)
+  nameWithType: DomainList.Add(String)
+- uid: OmiyaGames.Cryptography.DomainList.Add*
+  name: Add
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Add_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Add
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Add
+  nameWithType: DomainList.Add
+- uid: OmiyaGames.Cryptography.DomainList.Clear
+  name: Clear()
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Clear
+  commentId: M:OmiyaGames.Cryptography.DomainList.Clear
+  fullName: OmiyaGames.Cryptography.DomainList.Clear()
+  nameWithType: DomainList.Clear()
+- uid: OmiyaGames.Cryptography.DomainList.Clear*
+  name: Clear
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Clear_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Clear
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Clear
+  nameWithType: DomainList.Clear
+- uid: OmiyaGames.Cryptography.DomainList.Contains(System.String)
+  name: Contains(String)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Contains_System_String_
+  commentId: M:OmiyaGames.Cryptography.DomainList.Contains(System.String)
+  fullName: OmiyaGames.Cryptography.DomainList.Contains(System.String)
+  nameWithType: DomainList.Contains(String)
+- uid: OmiyaGames.Cryptography.DomainList.Contains*
+  name: Contains
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Contains_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Contains
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Contains
+  nameWithType: DomainList.Contains
+- uid: OmiyaGames.Cryptography.DomainList.ConvertToRegex(System.String,System.Text.StringBuilder)
+  name: ConvertToRegex(String, StringBuilder)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_ConvertToRegex_System_String_System_Text_StringBuilder_
+  commentId: M:OmiyaGames.Cryptography.DomainList.ConvertToRegex(System.String,System.Text.StringBuilder)
+  fullName: OmiyaGames.Cryptography.DomainList.ConvertToRegex(System.String, System.Text.StringBuilder)
+  nameWithType: DomainList.ConvertToRegex(String, StringBuilder)
+- uid: OmiyaGames.Cryptography.DomainList.ConvertToRegex*
+  name: ConvertToRegex
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_ConvertToRegex_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.ConvertToRegex
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.ConvertToRegex
+  nameWithType: DomainList.ConvertToRegex
+- uid: OmiyaGames.Cryptography.DomainList.CopyTo(System.String[],System.Int32)
+  name: CopyTo(String[], Int32)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_CopyTo_System_String___System_Int32_
+  commentId: M:OmiyaGames.Cryptography.DomainList.CopyTo(System.String[],System.Int32)
+  name.vb: CopyTo(String(), Int32)
+  fullName: OmiyaGames.Cryptography.DomainList.CopyTo(System.String[], System.Int32)
+  fullName.vb: OmiyaGames.Cryptography.DomainList.CopyTo(System.String(), System.Int32)
+  nameWithType: DomainList.CopyTo(String[], Int32)
+  nameWithType.vb: DomainList.CopyTo(String(), Int32)
+- uid: OmiyaGames.Cryptography.DomainList.CopyTo*
+  name: CopyTo
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_CopyTo_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.CopyTo
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.CopyTo
+  nameWithType: DomainList.CopyTo
+- uid: OmiyaGames.Cryptography.DomainList.Count
+  name: Count
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Count
+  commentId: P:OmiyaGames.Cryptography.DomainList.Count
+  fullName: OmiyaGames.Cryptography.DomainList.Count
+  nameWithType: DomainList.Count
+- uid: OmiyaGames.Cryptography.DomainList.Count*
+  name: Count
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Count_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Count
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Count
+  nameWithType: DomainList.Count
+- uid: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList,OmiyaGames.Cryptography.StringCryptographer)
+  name: Decrypt(DomainList, StringCryptographer)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Decrypt_OmiyaGames_Cryptography_DomainList_OmiyaGames_Cryptography_StringCryptographer_
+  commentId: M:OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList,OmiyaGames.Cryptography.StringCryptographer)
+  fullName: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList, OmiyaGames.Cryptography.StringCryptographer)
+  nameWithType: DomainList.Decrypt(DomainList, StringCryptographer)
+- uid: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList,OmiyaGames.Cryptography.StringCryptographer,System.Collections.Generic.List{Regex}@)
+  name: Decrypt(DomainList, StringCryptographer, ref List<Regex>)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Decrypt_OmiyaGames_Cryptography_DomainList_OmiyaGames_Cryptography_StringCryptographer_System_Collections_Generic_List_Regex___
+  commentId: M:OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList,OmiyaGames.Cryptography.StringCryptographer,System.Collections.Generic.List{Regex}@)
+  name.vb: Decrypt(DomainList, StringCryptographer, ByRef List(Of Regex))
+  fullName: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList, OmiyaGames.Cryptography.StringCryptographer, ref System.Collections.Generic.List<Regex>)
+  fullName.vb: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList, OmiyaGames.Cryptography.StringCryptographer, ByRef System.Collections.Generic.List(Of Regex))
+  nameWithType: DomainList.Decrypt(DomainList, StringCryptographer, ref List<Regex>)
+  nameWithType.vb: DomainList.Decrypt(DomainList, StringCryptographer, ByRef List(Of Regex))
+- uid: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList,OmiyaGames.Cryptography.StringCryptographer,System.Collections.Generic.List{System.String}@)
+  name: Decrypt(DomainList, StringCryptographer, ref List<String>)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Decrypt_OmiyaGames_Cryptography_DomainList_OmiyaGames_Cryptography_StringCryptographer_System_Collections_Generic_List_System_String___
+  commentId: M:OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList,OmiyaGames.Cryptography.StringCryptographer,System.Collections.Generic.List{System.String}@)
+  name.vb: Decrypt(DomainList, StringCryptographer, ByRef List(Of String))
+  fullName: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList, OmiyaGames.Cryptography.StringCryptographer, ref System.Collections.Generic.List<System.String>)
+  fullName.vb: OmiyaGames.Cryptography.DomainList.Decrypt(OmiyaGames.Cryptography.DomainList, OmiyaGames.Cryptography.StringCryptographer, ByRef System.Collections.Generic.List(Of System.String))
+  nameWithType: DomainList.Decrypt(DomainList, StringCryptographer, ref List<String>)
+  nameWithType.vb: DomainList.Decrypt(DomainList, StringCryptographer, ByRef List(Of String))
+- uid: OmiyaGames.Cryptography.DomainList.Decrypt*
+  name: Decrypt
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Decrypt_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Decrypt
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Decrypt
+  nameWithType: DomainList.Decrypt
+- uid: OmiyaGames.Cryptography.DomainList.Generate(System.String,System.Collections.Generic.IList{System.String},OmiyaGames.Cryptography.StringCryptographer)
+  name: Generate(String, IList<String>, StringCryptographer)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Generate_System_String_System_Collections_Generic_IList_System_String__OmiyaGames_Cryptography_StringCryptographer_
+  commentId: M:OmiyaGames.Cryptography.DomainList.Generate(System.String,System.Collections.Generic.IList{System.String},OmiyaGames.Cryptography.StringCryptographer)
+  name.vb: Generate(String, IList(Of String), StringCryptographer)
+  fullName: OmiyaGames.Cryptography.DomainList.Generate(System.String, System.Collections.Generic.IList<System.String>, OmiyaGames.Cryptography.StringCryptographer)
+  fullName.vb: OmiyaGames.Cryptography.DomainList.Generate(System.String, System.Collections.Generic.IList(Of System.String), OmiyaGames.Cryptography.StringCryptographer)
+  nameWithType: DomainList.Generate(String, IList<String>, StringCryptographer)
+  nameWithType.vb: DomainList.Generate(String, IList(Of String), StringCryptographer)
+- uid: OmiyaGames.Cryptography.DomainList.Generate*
+  name: Generate
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Generate_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Generate
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Generate
+  nameWithType: DomainList.Generate
+- uid: OmiyaGames.Cryptography.DomainList.Get(AssetBundle,System.String)
+  name: Get(AssetBundle, String)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Get_AssetBundle_System_String_
+  commentId: M:OmiyaGames.Cryptography.DomainList.Get(AssetBundle,System.String)
+  fullName: OmiyaGames.Cryptography.DomainList.Get(AssetBundle, System.String)
+  nameWithType: DomainList.Get(AssetBundle, String)
+- uid: OmiyaGames.Cryptography.DomainList.Get*
+  name: Get
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Get_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Get
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Get
+  nameWithType: DomainList.Get
+- uid: OmiyaGames.Cryptography.DomainList.GetEnumerator
+  name: GetEnumerator()
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_GetEnumerator
+  commentId: M:OmiyaGames.Cryptography.DomainList.GetEnumerator
+  fullName: OmiyaGames.Cryptography.DomainList.GetEnumerator()
+  nameWithType: DomainList.GetEnumerator()
+- uid: OmiyaGames.Cryptography.DomainList.GetEnumerator*
+  name: GetEnumerator
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_GetEnumerator_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.GetEnumerator
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.GetEnumerator
+  nameWithType: DomainList.GetEnumerator
+- uid: OmiyaGames.Cryptography.DomainList.IsReadOnly
+  name: IsReadOnly
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_IsReadOnly
+  commentId: P:OmiyaGames.Cryptography.DomainList.IsReadOnly
+  fullName: OmiyaGames.Cryptography.DomainList.IsReadOnly
+  nameWithType: DomainList.IsReadOnly
+- uid: OmiyaGames.Cryptography.DomainList.IsReadOnly*
+  name: IsReadOnly
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_IsReadOnly_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.IsReadOnly
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.IsReadOnly
+  nameWithType: DomainList.IsReadOnly
+- uid: OmiyaGames.Cryptography.DomainList.Item(System.Int32)
+  name: Item[Int32]
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Item_System_Int32_
+  commentId: P:OmiyaGames.Cryptography.DomainList.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: OmiyaGames.Cryptography.DomainList.Item[System.Int32]
+  fullName.vb: OmiyaGames.Cryptography.DomainList.Item(System.Int32)
+  nameWithType: DomainList.Item[Int32]
+  nameWithType.vb: DomainList.Item(Int32)
+- uid: OmiyaGames.Cryptography.DomainList.Item*
+  name: Item
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Item_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Item
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Item
+  nameWithType: DomainList.Item
+- uid: OmiyaGames.Cryptography.DomainList.Remove(System.String)
+  name: Remove(String)
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Remove_System_String_
+  commentId: M:OmiyaGames.Cryptography.DomainList.Remove(System.String)
+  fullName: OmiyaGames.Cryptography.DomainList.Remove(System.String)
+  nameWithType: DomainList.Remove(String)
+- uid: OmiyaGames.Cryptography.DomainList.Remove*
+  name: Remove
+  href: api/OmiyaGames.Cryptography.DomainList.html#OmiyaGames_Cryptography_DomainList_Remove_
+  commentId: Overload:OmiyaGames.Cryptography.DomainList.Remove
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.DomainList.Remove
+  nameWithType: DomainList.Remove
+- uid: OmiyaGames.Cryptography.Editor
+  name: OmiyaGames.Cryptography.Editor
+  href: api/OmiyaGames.Cryptography.Editor.html
+  commentId: N:OmiyaGames.Cryptography.Editor
+  fullName: OmiyaGames.Cryptography.Editor
+  nameWithType: OmiyaGames.Cryptography.Editor
+- uid: OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator
+  name: DomainListAssetBundleGenerator
+  href: api/OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.html
+  commentId: T:OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator
+  fullName: OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator
+  nameWithType: DomainListAssetBundleGenerator
+- uid: OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.GenerateDomainList(System.String,System.String,System.Collections.Generic.IList{System.String},OmiyaGames.Cryptography.StringCryptographer,System.Boolean,System.Boolean)
+  name: GenerateDomainList(String, String, IList<String>, StringCryptographer, Boolean, Boolean)
+  href: api/OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.html#OmiyaGames_Cryptography_Editor_DomainListAssetBundleGenerator_GenerateDomainList_System_String_System_String_System_Collections_Generic_IList_System_String__OmiyaGames_Cryptography_StringCryptographer_System_Boolean_System_Boolean_
+  commentId: M:OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.GenerateDomainList(System.String,System.String,System.Collections.Generic.IList{System.String},OmiyaGames.Cryptography.StringCryptographer,System.Boolean,System.Boolean)
+  name.vb: GenerateDomainList(String, String, IList(Of String), StringCryptographer, Boolean, Boolean)
+  fullName: OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.GenerateDomainList(System.String, System.String, System.Collections.Generic.IList<System.String>, OmiyaGames.Cryptography.StringCryptographer, System.Boolean, System.Boolean)
+  fullName.vb: OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.GenerateDomainList(System.String, System.String, System.Collections.Generic.IList(Of System.String), OmiyaGames.Cryptography.StringCryptographer, System.Boolean, System.Boolean)
+  nameWithType: DomainListAssetBundleGenerator.GenerateDomainList(String, String, IList<String>, StringCryptographer, Boolean, Boolean)
+  nameWithType.vb: DomainListAssetBundleGenerator.GenerateDomainList(String, String, IList(Of String), StringCryptographer, Boolean, Boolean)
+- uid: OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.GenerateDomainList*
+  name: GenerateDomainList
+  href: api/OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.html#OmiyaGames_Cryptography_Editor_DomainListAssetBundleGenerator_GenerateDomainList_
+  commentId: Overload:OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.GenerateDomainList
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.Editor.DomainListAssetBundleGenerator.GenerateDomainList
+  nameWithType: DomainListAssetBundleGenerator.GenerateDomainList
+- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor
+  name: StringCryptographyEditor
+  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html
+  commentId: T:OmiyaGames.Cryptography.Editor.StringCryptographyEditor
+  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor
+  nameWithType: StringCryptographyEditor
+- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.DefaultFileName
+  name: DefaultFileName
+  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_DefaultFileName
+  commentId: F:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.DefaultFileName
+  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.DefaultFileName
+  nameWithType: StringCryptographyEditor.DefaultFileName
+- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
+  name: OnInspectorGUI()
+  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_OnInspectorGUI
+  commentId: M:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
+  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI()
+  nameWithType: StringCryptographyEditor.OnInspectorGUI()
+- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI*
+  name: OnInspectorGUI
+  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_OnInspectorGUI_
+  commentId: Overload:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
+  nameWithType: StringCryptographyEditor.OnInspectorGUI
+- uid: OmiyaGames.Cryptography.StringCryptographer
+  name: StringCryptographer
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html
+  commentId: T:OmiyaGames.Cryptography.StringCryptographer
+  fullName: OmiyaGames.Cryptography.StringCryptographer
+  nameWithType: StringCryptographer
+- uid: OmiyaGames.Cryptography.StringCryptographer.#ctor
+  name: StringCryptographer()
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer__ctor
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.#ctor
+  fullName: OmiyaGames.Cryptography.StringCryptographer.StringCryptographer()
+  nameWithType: StringCryptographer.StringCryptographer()
+- uid: OmiyaGames.Cryptography.StringCryptographer.#ctor(System.Int32)
+  name: StringCryptographer(Int32)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer__ctor_System_Int32_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.#ctor(System.Int32)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.StringCryptographer(System.Int32)
+  nameWithType: StringCryptographer.StringCryptographer(Int32)
+- uid: OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String)
+  name: StringCryptographer(String)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.StringCryptographer(System.String)
+  nameWithType: StringCryptographer.StringCryptographer(String)
+- uid: OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.Int32)
+  name: StringCryptographer(String, Int32)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_System_Int32_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.Int32)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.StringCryptographer(System.String, System.Int32)
+  nameWithType: StringCryptographer.StringCryptographer(String, Int32)
+- uid: OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.String)
+  name: StringCryptographer(String, String)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_System_String_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.String)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.StringCryptographer(System.String, System.String)
+  nameWithType: StringCryptographer.StringCryptographer(String, String)
+- uid: OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.String,System.String)
+  name: StringCryptographer(String, String, String)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_System_String_System_String_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.String,System.String)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.StringCryptographer(System.String, System.String, System.String)
+  nameWithType: StringCryptographer.StringCryptographer(String, String, String)
+- uid: OmiyaGames.Cryptography.StringCryptographer.#ctor*
+  name: StringCryptographer
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer__ctor_
+  commentId: Overload:OmiyaGames.Cryptography.StringCryptographer.#ctor
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.StringCryptographer.StringCryptographer
+  nameWithType: StringCryptographer.StringCryptographer
+- uid: OmiyaGames.Cryptography.StringCryptographer.AlphaNumericChars
+  name: AlphaNumericChars
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_AlphaNumericChars
+  commentId: F:OmiyaGames.Cryptography.StringCryptographer.AlphaNumericChars
+  fullName: OmiyaGames.Cryptography.StringCryptographer.AlphaNumericChars
+  nameWithType: StringCryptographer.AlphaNumericChars
+- uid: OmiyaGames.Cryptography.StringCryptographer.AlphaNumericSymbolsChars
+  name: AlphaNumericSymbolsChars
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_AlphaNumericSymbolsChars
+  commentId: F:OmiyaGames.Cryptography.StringCryptographer.AlphaNumericSymbolsChars
+  fullName: OmiyaGames.Cryptography.StringCryptographer.AlphaNumericSymbolsChars
+  nameWithType: StringCryptographer.AlphaNumericSymbolsChars
+- uid: OmiyaGames.Cryptography.StringCryptographer.Decrypt(System.String)
+  name: Decrypt(String)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_Decrypt_System_String_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.Decrypt(System.String)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.Decrypt(System.String)
+  nameWithType: StringCryptographer.Decrypt(String)
+- uid: OmiyaGames.Cryptography.StringCryptographer.Decrypt*
+  name: Decrypt
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_Decrypt_
+  commentId: Overload:OmiyaGames.Cryptography.StringCryptographer.Decrypt
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.StringCryptographer.Decrypt
+  nameWithType: StringCryptographer.Decrypt
+- uid: OmiyaGames.Cryptography.StringCryptographer.DefaultPasswordLength
+  name: DefaultPasswordLength
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_DefaultPasswordLength
+  commentId: F:OmiyaGames.Cryptography.StringCryptographer.DefaultPasswordLength
+  fullName: OmiyaGames.Cryptography.StringCryptographer.DefaultPasswordLength
+  nameWithType: StringCryptographer.DefaultPasswordLength
+- uid: OmiyaGames.Cryptography.StringCryptographer.Encrypt(System.String)
+  name: Encrypt(String)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_Encrypt_System_String_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.Encrypt(System.String)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.Encrypt(System.String)
+  nameWithType: StringCryptographer.Encrypt(String)
+- uid: OmiyaGames.Cryptography.StringCryptographer.Encrypt*
+  name: Encrypt
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_Encrypt_
+  commentId: Overload:OmiyaGames.Cryptography.StringCryptographer.Encrypt
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.StringCryptographer.Encrypt
+  nameWithType: StringCryptographer.Encrypt
+- uid: OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword(System.Int32,System.String)
+  name: GetRandomPassword(Int32, String)
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_System_Int32_System_String_
+  commentId: M:OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword(System.Int32,System.String)
+  fullName: OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword(System.Int32, System.String)
+  nameWithType: StringCryptographer.GetRandomPassword(Int32, String)
+- uid: OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword*
+  name: GetRandomPassword
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_
+  commentId: Overload:OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword
+  nameWithType: StringCryptographer.GetRandomPassword
+- uid: OmiyaGames.Cryptography.StringCryptographer.IvKey
+  name: IvKey
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_IvKey
+  commentId: P:OmiyaGames.Cryptography.StringCryptographer.IvKey
+  fullName: OmiyaGames.Cryptography.StringCryptographer.IvKey
+  nameWithType: StringCryptographer.IvKey
+- uid: OmiyaGames.Cryptography.StringCryptographer.IvKey*
+  name: IvKey
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_IvKey_
+  commentId: Overload:OmiyaGames.Cryptography.StringCryptographer.IvKey
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.StringCryptographer.IvKey
+  nameWithType: StringCryptographer.IvKey
+- uid: OmiyaGames.Cryptography.StringCryptographer.IvKeyBlockSize
+  name: IvKeyBlockSize
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_IvKeyBlockSize
+  commentId: F:OmiyaGames.Cryptography.StringCryptographer.IvKeyBlockSize
+  fullName: OmiyaGames.Cryptography.StringCryptographer.IvKeyBlockSize
+  nameWithType: StringCryptographer.IvKeyBlockSize
+- uid: OmiyaGames.Cryptography.StringCryptographer.PasswordHash
+  name: PasswordHash
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash
+  commentId: P:OmiyaGames.Cryptography.StringCryptographer.PasswordHash
+  fullName: OmiyaGames.Cryptography.StringCryptographer.PasswordHash
+  nameWithType: StringCryptographer.PasswordHash
+- uid: OmiyaGames.Cryptography.StringCryptographer.PasswordHash*
+  name: PasswordHash
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash_
+  commentId: Overload:OmiyaGames.Cryptography.StringCryptographer.PasswordHash
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.StringCryptographer.PasswordHash
+  nameWithType: StringCryptographer.PasswordHash
+- uid: OmiyaGames.Cryptography.StringCryptographer.SaltKey
+  name: SaltKey
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_SaltKey
+  commentId: P:OmiyaGames.Cryptography.StringCryptographer.SaltKey
+  fullName: OmiyaGames.Cryptography.StringCryptographer.SaltKey
+  nameWithType: StringCryptographer.SaltKey
+- uid: OmiyaGames.Cryptography.StringCryptographer.SaltKey*
+  name: SaltKey
+  href: api/OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_SaltKey_
+  commentId: Overload:OmiyaGames.Cryptography.StringCryptographer.SaltKey
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.StringCryptographer.SaltKey
+  nameWithType: StringCryptographer.SaltKey

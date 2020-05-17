@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>String Cryptographer | Cryptography documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="String Cryptographer | Cryptography documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="string-cryptographer">String Cryptographer</h1>
+
+<p>String Cryptographer is an asset that encrypts and decrypts texts.</p>
+<h3 id="creating-the-asset">Creating the asset</h3>
+<p>To create one, simply click on the &quot;Asset&quot; file menu and select &quot;Create -&gt; Omiya Games -&gt; String Cryptographer.&quot;</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/context-menu.png" alt="Context Menu"></p>
+<p>Alternatiely, one can bring up the same context menu via clicking the plus button on the upper-left hand corner of the Project window, or right-click within the Project window.</p>
+<p>In doing so, the Project window will prompt the user to enter a file name. Rename the file to your liking, and hit enter to confirm.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/enter-file-name.png" alt="Enter File Name"></p>
+<p>At this point, the asset is ready to use! All the fields are randomly generated, so each new String Cryptographer created should be unique.</p>
+<h3 id="editing-the-asset">Editing the asset</h3>
+<p>The passwords held in the file can be customized by clicking on the asset in the Project window, and making the edits in the Inspector window. Alternatively, click on &quot;Randomize all fields&quot; button to replace all fields with a new random string.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/inspector.png" alt="Inspector"></p>
+<p>Don&#39;t forget to save the project after making edits to the file, so the changes actually gets written in the file.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/save-project.png" alt="Save Project"></p>
+<h3 id="testing-the-asset">Testing the asset</h3>
+<p>The inspector provides the user a chance to test how well the String Cryptographer encrypts and decrypts in the two groups of fields at the bottom foldouts. Simply click on the <code>Test Encryption</code> and/or <code>Test Decryption</code> to expand them.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/test-asset.png" alt="Asset Test Fields"></p>
+<p>For testing encryption, simply enter your text in the input field, and hit enter. The output field will contain the encrypted result. Similarly, for decryption, enter the encrypted text in the input field to get the decrypted text in the output field. Do note that text in the output fields can be copied onto the clipboard (e.g. by tapping ctrl+V on Windows and Linux OS).</p>
+<h2 id="using-the-asset-in-a-script">Using the asset in a script</h2>
+<p>Utilizing String Cryptographer in scripts is incredibly easy. Once simply needs to add a member variable exposed to the inspector to start utilizing the asset:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+
+// Don&#39;t forget to add this &quot;using&quot; to support StringCryptographer
+using OmiyaGames.Cryptography;
+
+public class SampleStringCryptographer : MonoBehaviour
+{
+    // [SerializeField] Exposes private variables to the inspector
+    [SerializeField]
+    private StringCryptographer encrypter;
+</code></pre><p>Remember to, after attaching this script to a GameObject, drag-and-drop a String Cryptographer asset to the inspector field.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/script.png" alt="Script Inspector"></p>
+<p>From there, to encrypt a string, simply use the <code>Encrypt(string)</code> method:</p>
+<pre><code class="lang-csharp">// Encrypt the text
+string encryptedText = encrypter.Encrypt(text);
+
+// Print on the console
+Debug.Log(text + &quot; encrypted is: &quot; + encryptedText);
+</code></pre><p>And of course, to decrypt an encrypted string, simply use the <code>Decrypt(string)</code> method:</p>
+<pre><code class="lang-csharp">// Decrypt the text
+string decryptedText = encrypter.Decrypt(encryptedText);
+
+// Print on the console
+Debug.Log(encryptedText + &quot; decrypted is: &quot; + decryptedText);
+</code></pre><p>Full example below:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+
+// Don&#39;t forget to add this &quot;using&quot; to support StringCryptographer
+using OmiyaGames.Cryptography;
+
+public class SampleStringCryptographer : MonoBehaviour
+{
+    // [SerializeField] Exposes private variables to the inspector
+    [SerializeField]
+    private StringCryptographer encrypter;
+    [SerializeField]
+    private string text;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        // Encrypt the text
+        string encryptedText = encrypter.Encrypt(text);
+
+        // Print on the console
+        Debug.Log(text + &quot; encrypted is: &quot; + encryptedText);
+
+        // Decrypt the text
+        string decryptedText = encrypter.Decrypt(encryptedText);
+
+        // Print on the console
+        Debug.Log(encryptedText + &quot; decrypted is: &quot; + decryptedText);
+    }
+}
+</code></pre><p>As String Cryptographer is a <a href="https://docs.unity3d.com/ScriptReference/ScriptableObject.html"><code>ScriptableObject</code></a>, it can be constructed within a script as well:</p>
+<pre><code class="lang-csharp">readonly StringCryptographer encrypter = new StringCryptographer(&quot;Password123 - Also my briefcase code...&quot;, &quot;Salt key&quot;, &quot;IV Key&quot;);
+
+// Encrypt the text
+string encryptedText = encrypter.Encrypt(&quot;Text to encrypt and decrypt&quot;);
+
+// Print on the console
+Debug.Log(text + &quot; encrypted is: &quot; + encryptedText);
+
+// Decrypt the text
+string decryptedText = encrypter.Decrypt(encryptedText);
+
+// Print on the console
+Debug.Log(encryptedText + &quot; decrypted is: &quot; + decryptedText);
+</code></pre><h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://omiyagames.github.io/omiya-games-cryptography/api/OmiyaGames.Cryptography.StringCryptographer.html"><code>StringCryptographer.cs</code> API documentation</a></li>
+<li><a href="https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Runtime/StringCryptographer.cs"><code>StringCryptographer.cs</code> source code</a></li>
+<li><a href="https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Editor/StringCryptographyEditor.cs"><code>StringCryptographyEditor.cs</code> source code (generates the inspector editor)</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Documentation~/manual/string-cryptographer.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

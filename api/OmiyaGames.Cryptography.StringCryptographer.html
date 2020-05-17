@@ -1,0 +1,654 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StringCryptographer
+   | Cryptography documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StringCryptographer
+   | Cryptography documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="OmiyaGames.Cryptography.StringCryptographer">
+  
+  
+  <h1 id="OmiyaGames_Cryptography_StringCryptographer" data-uid="OmiyaGames.Cryptography.StringCryptographer" class="text-break">Class StringCryptographer
+  </h1>
+  <div class="markdown level0 summary"><p><see cref="!:ScriptableObject"></see> that can encrypt or decrypt strings.
+Taken directly from
+<a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/d6a2836a-d587-4068-8630-94f4fb2a2aeb/encrypt-and-decrypt-a-string-in-c?forum=csharpgeneral">
+this forum post by Kris444.
+</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">StringCryptographer</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OmiyaGames.Cryptography.html">OmiyaGames.Cryptography</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="OmiyaGames_Cryptography_StringCryptographer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StringCryptographer : ScriptableObject</code></pre>
+  </div>
+  <h5 id="OmiyaGames_Cryptography_StringCryptographer_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Revision History:
+<table><thead><tr><th></th><th>DateNameDescription</th></tr></thead><tbody><tr><td></td><td>2/11/2019Taro OmiyaInitial version</td></tr><tr><td></td><td>4/3/2020Taro OmiyaConverted the class to a package. Fixing a typo in a property.</td></tr></tbody></table></p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer__ctor_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer__ctor" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor">StringCryptographer()</h4>
+  <div class="markdown level1 summary"><p>Generates a <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a> with
+a randomized value for every field, using <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_System_Int32_System_String_">GetRandomPassword(Int32, String)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringCryptographer()</code></pre>
+  </div>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer__ctor_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer__ctor_System_Int32_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor(System.Int32)">StringCryptographer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Generates a <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a> with
+a randomized value for every field, using <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_System_Int32_System_String_">GetRandomPassword(Int32, String)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringCryptographer(int passwordLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">passwordLength</span></td>
+        <td><p>The string length of <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a> and <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_SaltKey">SaltKey</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer__ctor_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String)">StringCryptographer(String)</h4>
+  <div class="markdown level1 summary"><p>Generates a <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a> with <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a> set.
+All other fields are randomized using <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_System_Int32_System_String_">GetRandomPassword(Int32, String)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringCryptographer(string passwordHash)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">passwordHash</span></td>
+        <td><p>Sets <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer__ctor_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_System_Int32_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.Int32)">StringCryptographer(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Generates a <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a> with <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a> set.
+All other fields are randomized using <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_System_Int32_System_String_">GetRandomPassword(Int32, String)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringCryptographer(string passwordHash, int saltKeyLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">passwordHash</span></td>
+        <td><p>Sets <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">saltKeyLength</span></td>
+        <td><p>Length of <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_SaltKey">SaltKey</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer__ctor_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_System_String_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.String)">StringCryptographer(String, String)</h4>
+  <div class="markdown level1 summary"><p>Generates a <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a> with <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a> and <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_SaltKey">SaltKey</a> set.
+All other fields are randomized using <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_System_Int32_System_String_">GetRandomPassword(Int32, String)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringCryptographer(string passwordHash, string saltKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">passwordHash</span></td>
+        <td><p>Sets <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">saltKey</span></td>
+        <td><p>Sets <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_SaltKey">SaltKey</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer__ctor_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer__ctor_System_String_System_String_System_String_" data-uid="OmiyaGames.Cryptography.StringCryptographer.#ctor(System.String,System.String,System.String)">StringCryptographer(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Generates a <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a> with
+all fields set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringCryptographer(string passwordHash, string saltKey, string ivKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">passwordHash</span></td>
+        <td><p>Sets <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">saltKey</span></td>
+        <td><p>Sets <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_SaltKey">SaltKey</a></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">ivKey</span></td>
+        <td><p>Sets <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_IvKey">IvKey</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_AlphaNumericChars" data-uid="OmiyaGames.Cryptography.StringCryptographer.AlphaNumericChars">AlphaNumericChars</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AlphaNumericChars = &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_AlphaNumericSymbolsChars" data-uid="OmiyaGames.Cryptography.StringCryptographer.AlphaNumericSymbolsChars">AlphaNumericSymbolsChars</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AlphaNumericSymbolsChars = &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&amp;*-_+=?,.`~|(){}[]'\&quot;\\/&lt;&gt;&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_DefaultPasswordLength" data-uid="OmiyaGames.Cryptography.StringCryptographer.DefaultPasswordLength">DefaultPasswordLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultPasswordLength = 32</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_IvKeyBlockSize" data-uid="OmiyaGames.Cryptography.StringCryptographer.IvKeyBlockSize">IvKeyBlockSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int IvKeyBlockSize = 18</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer_IvKey_" data-uid="OmiyaGames.Cryptography.StringCryptographer.IvKey*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_IvKey" data-uid="OmiyaGames.Cryptography.StringCryptographer.IvKey">IvKey</h4>
+  <div class="markdown level1 summary"><p>Initialization Vector key, used for encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IvKey { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer_PasswordHash_" data-uid="OmiyaGames.Cryptography.StringCryptographer.PasswordHash*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_PasswordHash" data-uid="OmiyaGames.Cryptography.StringCryptographer.PasswordHash">PasswordHash</h4>
+  <div class="markdown level1 summary"><p>A random hash used for  used for encryption.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PasswordHash { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer_SaltKey_" data-uid="OmiyaGames.Cryptography.StringCryptographer.SaltKey*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_SaltKey" data-uid="OmiyaGames.Cryptography.StringCryptographer.SaltKey">SaltKey</h4>
+  <div class="markdown level1 summary"><p>A salt to make <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html#OmiyaGames_Cryptography_StringCryptographer_PasswordHash">PasswordHash</a> less predictable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SaltKey { set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer_Decrypt_" data-uid="OmiyaGames.Cryptography.StringCryptographer.Decrypt*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_Decrypt_System_String_" data-uid="OmiyaGames.Cryptography.StringCryptographer.Decrypt(System.String)">Decrypt(String)</h4>
+  <div class="markdown level1 summary"><p>Decrypts an encrypted string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Decrypt(string encryptedText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">encryptedText</span></td>
+        <td><p>String to decrypt.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>Decrypted string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer_Encrypt_" data-uid="OmiyaGames.Cryptography.StringCryptographer.Encrypt*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_Encrypt_System_String_" data-uid="OmiyaGames.Cryptography.StringCryptographer.Encrypt(System.String)">Encrypt(String)</h4>
+  <div class="markdown level1 summary"><p>Encrypts a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Encrypt(string plainText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">plainText</span></td>
+        <td><p>The string to encrypt.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>plainText, encrypted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_" data-uid="OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword*"></a>
+  <h4 id="OmiyaGames_Cryptography_StringCryptographer_GetRandomPassword_System_Int32_System_String_" data-uid="OmiyaGames.Cryptography.StringCryptographer.GetRandomPassword(System.Int32,System.String)">GetRandomPassword(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Generates a random password using alphanumeric characters.
+Taken directly from
+<a href="https://stackoverflow.com/questions/1344221/how-can-i-generate-random-alphanumeric-strings">
+this StackOverflow post by Eric J.</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetRandomPassword(int length, string acceptableChars = &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&amp;*-_+=?,.`~|(){}[]'\&quot;\\/&lt;&gt;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Length of the returned password</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">acceptableChars</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>An alphnumeric password</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

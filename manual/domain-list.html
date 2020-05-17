@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Domain List | Cryptography documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Domain List | Cryptography documentation ">
+    <meta name="generator" content="docfx 2.53.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="domain-list">Domain List</h1>
+
+<p>Domain List is a binary file that stores a list of strings, such as a list of acceptable web host domains.</p>
+<h3 id="pre-requisites">Pre-requisites</h3>
+<p>While technically optional, it&#39;s highly recommended to create and edit a Domain List with an associating String Cryptographer.  In doing so, all the stored strings will be enrypted, making it difficult to edit the Domain List from external tools: details on how to create one is <a href="https://omiyagames.github.io/omiya-games-cryptography/manual/string-cryptographer.md">documented here</a>.  For security reasons, Domain List does <em>not</em> store a copy of the String Cryptographer.</p>
+<h3 id="opening-domain-list-window">Opening Domain List window</h3>
+<p>Creating and editing Domain List is rather unusual. Since it&#39;s intentionally designed to be difficult to read by any other application, this package provides a dialog box to step through the process of creating one, than using the &quot;Asset -&gt; Create&quot; context menu. To open this window, in the file menu bar, select &quot;Windows -&gt; Omiya Games -&gt; Domain List.&quot;</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/context-menu.png" alt="Context Menu"></p>
+<p>This should make the following window pop-up.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/default-window.png" alt="Default Window"></p>
+<h3 id="creating-an-asset-bundle">Creating an asset bundle</h3>
+<p>Once the window is open, to start creating a Domain List, simply fill out the following fields:</p>
+<ol>
+<li>(Optional) Set the Encrypter field to a String Encrypter in the Project window.</li>
+<li>Expand &quot;Generate Domain List Asset&quot; foldout if it isn&#39;t already by clicking on it. Under &quot;All Accepted Domains&quot; list, add the plain-text strings to store in the asset bundle.</li>
+<li>Fill out the the two fields to indicate where the file should be created:<ol>
+<li>&quot;Name of folder&quot; field should contain a path relative to the root of the project e.g. <code>Assets/FolderName</code>. Note Unity expects &#39;/&#39; as the folder divider, regardless of operating system.</li>
+<li>&quot;Name of asset to generate&quot; will set the name of the new file.</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/generate-asset.png" alt="Asset Setup"></p>
+<p>Once all the fields are filled in, click &quot;Generate Domain List Asset&quot; to create the asset. This can take a few minutes.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/created-asset.png" alt="Asset Created!"></p>
+<p>Note: the process of making this simpler is being investigated.  See: <a href="https://github.com/OmiyaGames/omiya-games-cryptography/issues/5">Github Issue #5</a></p>
+<h3 id="reading-and-editing-an-asset-bundle">Reading and editing an asset bundle</h3>
+<p>In the same window, fill out the following fields:</p>
+<ol>
+<li>(Optional) Set the Encrypter field to a String Encrypter in the Project window.</li>
+<li>Expand &quot;REad Domain List Asset&quot; foldout if it isn&#39;t already by clicking on it. Drag-and-drop from the Project window the Domain List you want to edit or read.</li>
+</ol>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/load-asset.png" alt="Loading Domain List"></p>
+<p>If you click on &quot;Read Domain List Asset,&quot; a message bubble will show up at the bottom of the foldout, providing a list of strings the Domain List holds (if it was able to be read successfully).</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/read-asset.png" alt="Reading Domain List"></p>
+<p>If you click on &quot;Edit Domain List Asset,&quot; the fields in the &quot;Generate Domain List Asset&quot; foldout will now be populated with the information contained in the domain list. Simply expand that foldout, make the edits needed, then click &quot;Generate Domain List Asset.&quot;</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/edit-asset.png" alt="Editing Domain List"></p>
+<p>Note #1: if you try to overwrite an existing file, the dialog will warn you so, and ask if you want to confirm this action. Obviously, click &quot;Yes&quot; will prompt the dialog to overwrite the file.</p>
+<p><img src="https://omiyagames.github.io/omiya-games-cryptography/resources/domain-list/overwrite.png" alt="Overwrite Confirmation"></p>
+<p>Note #2: the process of making this simpler is being investigated.  See: <a href="https://github.com/OmiyaGames/omiya-games-cryptography/issues/5">Github Issue #5</a></p>
+<h2 id="using-the-asset-in-a-script">Using the asset in a script</h2>
+<p>Loading a Domain List in a scripts does require a little work. The example below indicates how to load an AssetBundle asynchronously using a user-defined file name, followed by retrieving a DomainList from that AssetBundle via a helper function:</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using System.IO;
+
+// This using is necessary to support Domain List
+using OmiyaGames.Cryptography;
+
+public class SampleDomainList : MonoBehaviour
+{
+    // Inspector variables necessary to load a Domain List
+    [SerializeField]
+    private string assetName;
+    [SerializeField]
+    private StringCryptographer decrypter;
+
+    // Start is called before the first frame update
+    IEnumerator Start()
+    {
+        // Asyncrhonously load the asset bundle
+        AssetBundleCreateRequest bundleLoadRequest = AssetBundle.LoadFromFileAsync(Path.Combine(Application.streamingAssetsPath, assetName));
+        yield return bundleLoadRequest;
+
+        // Confirm an asset bundle was successfully loaded
+        AssetBundle myAssetBundle = bundleLoadRequest.assetBundle;
+        if (myAssetBundle == null)
+        {
+            Debug.Log(&quot;Failed to load AssetBundle!&quot;);
+
+            // Halt Start
+            yield break;
+        }
+
+        // Attempt to load the Domain List from the asset bundle
+        DomainList list = DomainList.Get(myAssetBundle);
+        if (list == null)
+        {
+            Debug.Log(&quot;Failed to load DomainList!&quot;);
+
+            // Unload the entire asset bundle
+            myAssetBundle.Unload(false);
+
+            // Halt Start
+            yield break;
+        }
+
+        // If successfully loaded, decrypt all the strings stored in the asset
+        foreach(string encryptedString in list)
+        {
+            Debug.Log(decrypter.Decrypt(encryptedString));
+        }
+
+        // Note: this loop below does the same thing as the one above;
+        // DomainList is just a read-only IList&lt;string&gt;, after all.
+        for (int index = 0; index &lt; list.Count; ++index)
+        {
+            Debug.Log(decrypter.Decrypt(list[index]));
+        }
+
+        // Unload the entire asset bundle
+        myAssetBundle.Unload(false);
+    }
+}
+</code></pre><h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://omiyagames.github.io/omiya-games-cryptography/api/OmiyaGames.Cryptography.DomainList.html"><code>DomainList.cs</code> API documentation</a></li>
+<li><a href="https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Runtime/DomainList.cs"><code>DomainList.cs</code> source code</a></li>
+<li><a href="https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Editor/DomainListAssetBundleGenerator.cs"><code>DomainListAssetBundleGenerator.cs</code> source code (the dialog box)</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/OmiyaGames/omiya-games-cryptography/blob/master/Documentation~/manual/domain-list.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright © 2020 Omiya Games
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
