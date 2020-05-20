@@ -9,6 +9,7 @@ using OmiyaGames.Common.Editor;
 namespace OmiyaGames.Cryptography.Editor
 {
     ///-----------------------------------------------------------------------
+    /// <remarks>
     /// <copyright file="DomainListAssetBundleGenerator.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
@@ -32,32 +33,43 @@ namespace OmiyaGames.Cryptography.Editor
     /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     /// THE SOFTWARE.
     /// </copyright>
-    /// <date>5/14/2016</date>
-    /// <author>Taro Omiya</author>
+    /// <list type="table">
+    /// <listheader>
+    /// <term>Revision</term>
+    /// <description>Description</description>
+    /// </listheader>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.0.0-preview.1<br/>
+    /// <strong>Date:</strong> 5/14/2016<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Initial verison.</description>
+    /// </item>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.2.0-preview.1<br/>
+    /// <strong>Date:</strong> 4/27/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Converting to package.</description>
+    /// </item>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.2.2-preview.1<br/>
+    /// <strong>Date:</strong> 5/19/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Fixing license documentation to be more DocFX friendly.</description>
+    /// </item>
+    /// </list>
+    /// </remarks>
     ///-----------------------------------------------------------------------
     /// <summary>
     /// Creates a window that, after pushing the "Generate Domain List Asset," creates
     /// an Asset Bundle containing an instance of <see cref="DomainList"/>.
-    /// </summary>
     /// <seealso cref="DomainList"/>
-    /// <list type="table">
-    ///   <listheader>
-    ///     <description>Date</description>
-    ///     <description>Name</description>
-    ///     <description>Description</description>
-    ///   </listheader>
-    ///   <item>
-    ///     <description>5/14/2016</description>
-    ///     <description>Taro</description>
-    ///     <description>Initial version</description>
-    ///   </item>
-    ///   <item>
-    ///     <description>4/27/2020</description>
-    ///     <description>Taro</description>
-    ///     <description>Converting to package.</description>
-    ///   </item>
-    /// </list>
-    /// </remarks>
+    /// </summary>
     public class DomainListAssetBundleGenerator : EditorWindow
     {
         const string BundleId = "domains";

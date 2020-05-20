@@ -7,6 +7,7 @@ using System.Security.Cryptography;
 namespace OmiyaGames.Cryptography
 {
     ///-----------------------------------------------------------------------
+    /// <remarks>
     /// <copyright file="StringCryptographer.cs" company="Omiya Games">
     /// The MIT License (MIT)
     /// 
@@ -30,8 +31,37 @@ namespace OmiyaGames.Cryptography
     /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
     /// THE SOFTWARE.
     /// </copyright>
-    /// <date>2/11/2019</date>
-    /// <author>Taro Omiya</author>
+    /// <list type="table">
+    /// <listheader>
+    /// <term>Revision</term>
+    /// <description>Description</description>
+    /// </listheader>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.0.0-preview.1<br/>
+    /// <strong>Date:</strong> 2/11/2019<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Initial verison.</description>
+    /// </item>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.1.0-preview.1<br/>
+    /// <strong>Date:</strong> 4/3/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Converted the class to a package.</description>
+    /// </item>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.2.2-preview.1<br/>
+    /// <strong>Date:</strong> 5/19/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Fixing license documentation to be more DocFX friendly.</description>
+    /// </item>
+    /// </list>
+    /// </remarks>
     ///-----------------------------------------------------------------------
     /// <summary>
     /// <see cref="ScriptableObject"/> that can encrypt or decrypt strings.
@@ -39,29 +69,9 @@ namespace OmiyaGames.Cryptography
     /// <a href="https://social.msdn.microsoft.com/Forums/vstudio/en-US/d6a2836a-d587-4068-8630-94f4fb2a2aeb/encrypt-and-decrypt-a-string-in-c?forum=csharpgeneral">
     /// this forum post by Kris444.
     /// </a>
-    /// </summary>
     /// <seealso cref="RijndaelManaged"/>
     /// <seealso cref="RNGCryptoServiceProvider"/>
-    /// <remarks>
-    /// Revision History:
-    /// <list type="table">
-    ///   <listheader>
-    ///     <description>Date</description>
-    ///     <description>Name</description>
-    ///     <description>Description</description>
-    ///   </listheader>
-    ///   <item>
-    ///     <description>2/11/2019</description>
-    ///     <description>Taro Omiya</description>
-    ///     <description>Initial version</description>
-    ///   </item>
-    ///   <item>
-    ///     <description>4/3/2020</description>
-    ///     <description>Taro Omiya</description>
-    ///     <description>Converted the class to a package. Fixing a typo in a property.</description>
-    ///   </item>
-    /// </list>
-    /// </remarks>
+    /// </summary>
     public class StringCryptographer : ScriptableObject
     {
         public const int DefaultPasswordLength = 32;
