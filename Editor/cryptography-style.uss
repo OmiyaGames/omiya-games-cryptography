@@ -1,7 +1,0 @@
-.header {
-    -unity-font-style: bold;
-}
-
-.spacer {
-    height: 8px;
-}

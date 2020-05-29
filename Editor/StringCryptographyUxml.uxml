@@ -1,29 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:VisualElement name="RequiredFields">
-        <Style src="cryptography-style.uss" />
-        <ui:VisualElement class="spacer" />
-        <ui:Label text="Fields" name="FieldsHeader" class="header" />
-        <ui:TextField label="Password Hash" tooltip="Secret password used for encryption." name="PasswordHash" />
-        <ui:TextField label="Salt Key" tabindex="1" name="SaltKey" tooltip="Used to make the encrypted text harder to guess." />
-        <ui:TextField label="IV Key" name="IvKey" tabindex="2" />
-        <ui:VisualElement class="spacer" />
-        <ui:Button text="Randomize All Fields" name="RandomizeAll" />
-    </ui:VisualElement>
-    <ui:VisualElement name="TestGroup">
-        <Style src="cryptography-style.uss" />
-        <ui:VisualElement class="spacer" />
-        <ui:Foldout text="Test Encryption/Decryption" name="TestFoldout">
-            <ui:TextField picking-mode="Ignore" label="Input" value="filler text" name="TestInput" tabindex="3" />
-            <ui:VisualElement name="TestButtonGroup">
-                <ui:VisualElement style="flex-direction: row; justify-content: space-around; margin-left: 3px; margin-right: 3px; margin-top: 1px; margin-bottom: 1px;">
-                    <ui:Button text="Encrypt" name="EncryptButton" tabindex="4" style="width: 50%;" />
-                    <ui:Button text="Decrypt" name="DecryptButton" tabindex="5" style="width: 50%;" />
-                </ui:VisualElement>
-                <ui:VisualElement class="spacer" />
-                <ui:TextField picking-mode="Ignore" readonly="true" tabindex="6">
-                    <ui:Button text="Copy To Clipboard" name="CopyToClipboard" tabindex="7" />
-                </ui:TextField>
-            </ui:VisualElement>
-        </ui:Foldout>
-    </ui:VisualElement>
-</ui:UXML>
