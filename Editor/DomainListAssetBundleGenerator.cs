@@ -228,7 +228,7 @@ namespace OmiyaGames.Cryptography.Editor
                 {
                     // Check if file already exists
                     string pathOfAsset = Path.Combine(nameOfFolder, nameOfFile);
-                    if (AssetHelpers.ConfirmFileIsWriteable(pathOfAsset, nameOfFile) == true)
+                    if (AssetHelpers.ConfirmOverwriteFile(pathOfAsset, nameOfFile) == true)
                     {
                         GenerateDomainList(nameOfFolder, nameOfFile, allDomains, encrypter);
                     }

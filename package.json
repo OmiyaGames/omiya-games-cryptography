@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "com.unity.ext.nunit": "1.0.0",
-    "com.omiyagames.common": "0.1.3-preview.1"
+    "com.omiyagames.common": "0.1.4-preview.1"
   },
   "scopedRegistries": [
     {
