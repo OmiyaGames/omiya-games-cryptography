@@ -3,6 +3,7 @@ using UnityEditor.AnimatedValues;
 using UnityEngine;
 using System.IO;
 using OmiyaGames.Common.Editor;
+using UnityEngine.UIElements;
 
 namespace OmiyaGames.Cryptography.Editor
 {
@@ -98,62 +99,62 @@ namespace OmiyaGames.Cryptography.Editor
         }
 
         /// <inheritdoc/>
-        public override void OnInspectorGUI()
-        {
-            // Update the serialized object
-            serializedObject.Update();
+        //public override void OnInspectorGUI()
+        //{
+        //    // Update the serialized object
+        //    serializedObject.Update();
 
-            // Display all fields
-            EditorGUILayout.PropertyField(passwordHash);
-            EditorGUILayout.PropertyField(saltKey);
-            EditorGUILayout.PropertyField(ivKey);
+        //    // Display all fields
+        //    EditorGUILayout.PropertyField(passwordHash);
+        //    EditorGUILayout.PropertyField(saltKey);
+        //    EditorGUILayout.PropertyField(ivKey);
 
-            // Display a button to randomize all fields
-            EditorGUILayout.Space();
-            if (GUILayout.Button("Randomize all fields") == true)
-            {
-                passwordHash.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
-                saltKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
-                ivKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
-            }
+        //    // Display a button to randomize all fields
+        //    EditorGUILayout.Space();
+        //    if (GUILayout.Button("Randomize all fields") == true)
+        //    {
+        //        passwordHash.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
+        //        saltKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
+        //        ivKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
+        //    }
 
-            // Display test encryption
-            EditorGUILayout.Space();
-            EditorHelpers.DrawBoldFoldout(encryptionGroup, "Test Encryption");
-            using (EditorGUILayout.FadeGroupScope scope = new EditorGUILayout.FadeGroupScope(encryptionGroup.faded))
-            {
-                if (scope.visible == true)
-                {
-                    testEncryption = EditorGUILayout.DelayedTextField("Input", testEncryption);
-                    string output = null;
-                    if (string.IsNullOrEmpty(testEncryption) == false)
-                    {
-                        output = ((StringCryptographer)target).Encrypt(testEncryption);
-                    }
-                    EditorGUILayout.TextField("Output", output);
-                }
-            }
+        //    // Display test encryption
+        //    EditorGUILayout.Space();
+        //    EditorHelpers.DrawBoldFoldout(encryptionGroup, "Test Encryption");
+        //    using (EditorGUILayout.FadeGroupScope scope = new EditorGUILayout.FadeGroupScope(encryptionGroup.faded))
+        //    {
+        //        if (scope.visible == true)
+        //        {
+        //            testEncryption = EditorGUILayout.DelayedTextField("Input", testEncryption);
+        //            string output = null;
+        //            if (string.IsNullOrEmpty(testEncryption) == false)
+        //            {
+        //                output = ((StringCryptographer)target).Encrypt(testEncryption);
+        //            }
+        //            EditorGUILayout.TextField("Output", output);
+        //        }
+        //    }
 
-            // Display test decryption
-            EditorGUILayout.Space();
-            EditorHelpers.DrawBoldFoldout(decryptionGroup, "Test Decryption");
-            using (EditorGUILayout.FadeGroupScope scope = new EditorGUILayout.FadeGroupScope(decryptionGroup.faded))
-            {
-                if (scope.visible == true)
-                {
-                    testDecryption = EditorGUILayout.DelayedTextField("Input", testDecryption);
-                    string output = null;
-                    if (string.IsNullOrEmpty(testDecryption) == false)
-                    {
-                        output = ((StringCryptographer)target).Decrypt(testDecryption);
-                    }
-                    EditorGUILayout.TextField("Output", output);
-                }
-            }
+        //    // Display test decryption
+        //    EditorGUILayout.Space();
+        //    EditorHelpers.DrawBoldFoldout(decryptionGroup, "Test Decryption");
+        //    using (EditorGUILayout.FadeGroupScope scope = new EditorGUILayout.FadeGroupScope(decryptionGroup.faded))
+        //    {
+        //        if (scope.visible == true)
+        //        {
+        //            testDecryption = EditorGUILayout.DelayedTextField("Input", testDecryption);
+        //            string output = null;
+        //            if (string.IsNullOrEmpty(testDecryption) == false)
+        //            {
+        //                output = ((StringCryptographer)target).Decrypt(testDecryption);
+        //            }
+        //            EditorGUILayout.TextField("Output", output);
+        //        }
+        //    }
 
-            // Apply modifications
-            serializedObject.ApplyModifiedProperties();
-        }
+        //    // Apply modifications
+        //    serializedObject.ApplyModifiedProperties();
+        //}
 
         private void OnEnable()
         {
@@ -165,6 +166,19 @@ namespace OmiyaGames.Cryptography.Editor
             // Setup the animations
             encryptionGroup = new AnimBool(false, Repaint);
             decryptionGroup = new AnimBool(false, Repaint);
+        }
+
+        public override VisualElement CreateInspectorGUI()
+        {
+            // Each editor window contains a root VisualElement object
+            var container = new VisualElement();
+
+            // Import UXML
+            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.omiyagames.cryptography/Editor/StringCryptographyUxml.uxml");
+            VisualElement labelFromUXML = visualTree.CloneTree();
+            container.Add(labelFromUXML);
+
+            return container;
         }
     }
 }
