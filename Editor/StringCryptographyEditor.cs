@@ -83,6 +83,7 @@ namespace OmiyaGames.Cryptography.Editor
         private AnimBool encryptionGroup, decryptionGroup;
         private string testEncryption, testDecryption;
 
+        [MenuItem("Tools/Omiya Games/Create/String Cryptographer")]
         [MenuItem("Assets/Create/Omiya Games/String Cryptographer", priority = 203)]
         private static void CreateStringCryptographer()
         {

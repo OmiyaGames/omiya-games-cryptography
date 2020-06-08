@@ -107,6 +107,7 @@ namespace OmiyaGames.Cryptography.Editor
             }
         }
 
+        [MenuItem("Tools/Omiya Games/Create/Domain List")]
         [MenuItem("Window/Omiya Games/Domain List")]
         static void Initialize()
         {
