@@ -82,6 +82,7 @@ namespace OmiyaGames.Cryptography.Editor
         private SerializedProperty ivKey;
         private TextField testInputTextField;
         private TextField testOutputTextField;
+        private Button copyToClipboardButton;
         //private AnimBool encryptionGroup, decryptionGroup;
         //private string testEncryption, testDecryption;
 
@@ -171,6 +172,7 @@ namespace OmiyaGames.Cryptography.Editor
             //decryptionGroup = new AnimBool(false, Repaint);
         }
 
+        /// <inheritdoc/>
         public override VisualElement CreateInspectorGUI()
         {
             // Each editor window contains a root VisualElement object
@@ -198,11 +200,116 @@ namespace OmiyaGames.Cryptography.Editor
             testFoldout.value = false;
 
             // Retrieve the test text fields into variables
-            testInputTextField = fullTree.Query<TextField>("TestInput").First(); ;
-            testOutputTextField = fullTree.Query<TextField>("TestOutput").First(); ;
+            testInputTextField = fullTree.Query<TextField>("TestInput").First();
+            testOutputTextField = fullTree.Query<TextField>("TestOutput").First();
 
-            // FIXME: Work on setting up the buttons
+            // Clear out the two fields
+            testInputTextField.value = null;
+            testOutputTextField.value = null;
+
+            // Grab the RandomizeAll button, and bind it to a method
+            Button button = fullTree.Query<Button>("RandomizeAll").First();
+            button.clicked += OnRandomizeAllClicked;
+
+            // Grab the Encrypt button, and bind it to a method
+            button = fullTree.Query<Button>("EncryptButton").First();
+            button.clicked += OnEncryptClicked;
+
+            // Grab the Decrypt button, and bind it to a method
+            button = fullTree.Query<Button>("DecryptButton").First();
+            button.clicked += OnDecryptClicked;
+
+            // FIXME: Grab the CopyToClipboard button, and bind it to a method
+            copyToClipboardButton = fullTree.Query<Button>("CopyToClipboard").First();
+            copyToClipboardButton.clicked += OnCopyToClipboardClicked;
+            copyToClipboardButton.SetEnabled(false);
+
             return container;
         }
+
+        #region Button Events
+        /// <summary>
+        /// Randomzes all serialized fields.
+        /// </summary>
+        private void OnRandomizeAllClicked()
+        {
+            // Make sure all serialized properties are set
+            if ((passwordHash != null) && (saltKey != null) && (ivKey != null))
+            {
+                // Randomize all fields
+                passwordHash.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
+                saltKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
+                ivKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
+
+                // Apply all modifications
+                serializedObject.ApplyModifiedProperties();
+            }
+        }
+
+        /// <summary>
+        /// Encrypts text in Input text field, and puts it in Output text field.
+        /// </summary>
+        private void OnEncryptClicked()
+        {
+            // Confirm the text fields exists
+            if ((testInputTextField != null) && (testOutputTextField != null))
+            {
+                // Check to see if the input field has a value set
+                string output = null;
+                if (string.IsNullOrEmpty(testInputTextField.value) == false)
+                {
+                    // Run the encrypt function
+                    output = testInputTextField.value;
+                    output = ((StringCryptographer)target).Encrypt(output);
+                }
+
+                // Update output text field
+                testOutputTextField.value = output;
+
+                // Enable if copy to clipboard button based on output
+                bool enableCopyToClipboard = !string.IsNullOrEmpty(output);
+                copyToClipboardButton.SetEnabled(enableCopyToClipboard);
+            }
+        }
+
+        /// <summary>
+        /// Decrypts text in Input text field, and puts it in Output text field.
+        /// </summary>
+        private void OnDecryptClicked()
+        {
+            // Confirm the text fields exists
+            if ((testInputTextField != null) && (testOutputTextField != null))
+            {
+                // Check to see if the input field has a value set
+                string output = null;
+                if (string.IsNullOrEmpty(testInputTextField.value) == false)
+                {
+                    // Run the decrypt function
+                    output = testInputTextField.value;
+                    output = ((StringCryptographer)target).Decrypt(output);
+                }
+
+                // Update output text field
+                testOutputTextField.value = output;
+
+                // Enable if copy to clipboard button based on output
+                bool enableCopyToClipboard = !string.IsNullOrEmpty(output);
+                copyToClipboardButton.SetEnabled(enableCopyToClipboard);
+            }
+        }
+
+        /// <summary>
+        /// Copies text in Output text field to the OS' clipboard
+        /// </summary>
+        private void OnCopyToClipboardClicked()
+        {
+            // Confirm output field has actual text in it
+            if ((testOutputTextField != null) && (string.IsNullOrEmpty(testOutputTextField.value) == false))
+            {
+                // Set copy buffer to the output text field's text.
+                GUIUtility.systemCopyBuffer = testOutputTextField.value;
+            }
+        }
+        #endregion
     }
 }
