@@ -80,8 +80,10 @@ namespace OmiyaGames.Cryptography.Editor
         private SerializedProperty passwordHash;
         private SerializedProperty saltKey;
         private SerializedProperty ivKey;
-        private AnimBool encryptionGroup, decryptionGroup;
-        private string testEncryption, testDecryption;
+        private TextField testInputTextField;
+        private TextField testOutputTextField;
+        //private AnimBool encryptionGroup, decryptionGroup;
+        //private string testEncryption, testDecryption;
 
         [MenuItem("Tools/Omiya Games/Create/String Cryptographer")]
         [MenuItem("Assets/Create/Omiya Games/String Cryptographer", priority = 203)]
@@ -165,20 +167,41 @@ namespace OmiyaGames.Cryptography.Editor
             ivKey = serializedObject.FindProperty("ivKey");
 
             // Setup the animations
-            encryptionGroup = new AnimBool(false, Repaint);
-            decryptionGroup = new AnimBool(false, Repaint);
+            //encryptionGroup = new AnimBool(false, Repaint);
+            //decryptionGroup = new AnimBool(false, Repaint);
         }
 
         public override VisualElement CreateInspectorGUI()
         {
             // Each editor window contains a root VisualElement object
-            var container = new VisualElement();
+            VisualElement container = new VisualElement();
 
             // Import UXML
-            var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.omiyagames.cryptography/Editor/StringCryptographyUxml.uxml");
-            VisualElement labelFromUXML = visualTree.CloneTree();
-            container.Add(labelFromUXML);
+            VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/com.omiyagames.cryptography/Editor/StringCryptographyUxml.uxml");
+            VisualElement fullTree = visualTree.CloneTree();
+            container.Add(fullTree);
 
+            // Grab the PasswordHash text field, and bind it to the appropriate field.
+            TextField serializedTextField = fullTree.Query<TextField>("PasswordHash").First();
+            serializedTextField.bindingPath = "passwordHash";
+
+            // Grab the SaltKey text field, and bind it to the appropriate field.
+            serializedTextField = fullTree.Query<TextField>("SaltKey").First();
+            serializedTextField.bindingPath = "saltKey";
+
+            // Grab the IvKey text field, and bind it to the appropriate field.
+            serializedTextField = fullTree.Query<TextField>("IvKey").First();
+            serializedTextField.bindingPath = "ivKey";
+
+            // Compress the foldout by default
+            Foldout testFoldout = fullTree.Query<Foldout>("TestFoldout").First();
+            testFoldout.value = false;
+
+            // Retrieve the test text fields into variables
+            testInputTextField = fullTree.Query<TextField>("TestInput").First(); ;
+            testOutputTextField = fullTree.Query<TextField>("TestOutput").First(); ;
+
+            // FIXME: Work on setting up the buttons
             return container;
         }
     }
