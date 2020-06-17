@@ -243,25 +243,25 @@ references:
   commentId: T:OmiyaGames.Cryptography.Editor.StringCryptographyEditor
   fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor
   nameWithType: StringCryptographyEditor
+- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI
+  name: CreateInspectorGUI()
+  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_CreateInspectorGUI
+  commentId: M:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI
+  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI()
+  nameWithType: StringCryptographyEditor.CreateInspectorGUI()
+- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI*
+  name: CreateInspectorGUI
+  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_CreateInspectorGUI_
+  commentId: Overload:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI
+  isSpec: "True"
+  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI
+  nameWithType: StringCryptographyEditor.CreateInspectorGUI
 - uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.DefaultFileName
   name: DefaultFileName
   href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_DefaultFileName
   commentId: F:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.DefaultFileName
   fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.DefaultFileName
   nameWithType: StringCryptographyEditor.DefaultFileName
-- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
-  name: OnInspectorGUI()
-  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_OnInspectorGUI
-  commentId: M:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
-  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI()
-  nameWithType: StringCryptographyEditor.OnInspectorGUI()
-- uid: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI*
-  name: OnInspectorGUI
-  href: api/OmiyaGames.Cryptography.Editor.StringCryptographyEditor.html#OmiyaGames_Cryptography_Editor_StringCryptographyEditor_OnInspectorGUI_
-  commentId: Overload:OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
-  isSpec: "True"
-  fullName: OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI
-  nameWithType: StringCryptographyEditor.OnInspectorGUI
 - uid: OmiyaGames.Cryptography.StringCryptographer
   name: StringCryptographer
   href: api/OmiyaGames.Cryptography.StringCryptographer.html

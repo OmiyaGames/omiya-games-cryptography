@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class StringCryptographyEditor
    | Cryptography documentation ">
-    <meta name="generator" content="docfx 2.53.1.0">
+    <meta name="generator" content="docfx 2.55.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,7 +83,8 @@
   
   <h1 id="OmiyaGames_Cryptography_Editor_StringCryptographyEditor" data-uid="OmiyaGames.Cryptography.Editor.StringCryptographyEditor" class="text-break">Class StringCryptographyEditor
   </h1>
-  <div class="markdown level0 summary"><p>An editor script for <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a>.</p>
+  <div class="markdown level0 summary"><p>An editor script for <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a>.
+<a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a></p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -98,15 +99,50 @@
     <pre><code class="lang-csharp hljs">public class StringCryptographyEditor : UnityEditor.Editor</code></pre>
   </div>
   <h5 id="OmiyaGames_Cryptography_Editor_StringCryptographyEditor_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Revision History:
-<table><thead><tr><th></th><th>DateNameDescription</th></tr></thead><tbody><tr><td></td><td>2/11/2019Taro OmiyaInitial version</td></tr><tr><td></td><td>4/3/2020Taro OmiyaConverted the class to a package.</td></tr></tbody></table></p>
+  <div class="markdown level0 remarks"><p><copyright file="StringCryptographyEditor.cs" company="Omiya Games">
+The MIT License (MIT)<p>
+<p>Copyright (c) 2019-2020 Omiya Games</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</copyright>
+<table><thead><tr><th>Revision</th><th>Description</th></tr></thead><tbody><tr><td>
+<strong>Version:</strong> 0.0.0-preview.1<br>
+<strong>Date:</strong> 2/11/2019<br>
+<strong>Author:</strong> Taro Omiya
+</td><td>Initial verison.</td></tr><tr><td>
+<strong>Version:</strong> 0.1.0-preview.1<br>
+<strong>Date:</strong> 4/3/2020<br>
+<strong>Author:</strong> Taro Omiya
+</td><td>Converted the class to a package.</td></tr><tr><td>
+<strong>Version:</strong> 0.2.2-preview.1<br>
+<strong>Date:</strong> 5/19/2020<br>
+<strong>Author:</strong> Taro Omiya
+</td><td>Fixing license documentation to be more DocFX friendly.</td></tr><tr><td>
+<strong>Version:</strong> 0.3.0-preview.1<br>
+<strong>Date:</strong> 6/16/2020<br>
+<strong>Author:</strong> Taro Omiya
+</td><td>Converted editor to utilize UIElements. Redesigned the UI a bit.</td></tr></tbody></table></p>
 </div>
   <h3 id="fields">Fields
   </h3>
   
   
   <h4 id="OmiyaGames_Cryptography_Editor_StringCryptographyEditor_DefaultFileName" data-uid="OmiyaGames.Cryptography.Editor.StringCryptographyEditor.DefaultFileName">DefaultFileName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Default file name when creating a new <a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -131,18 +167,29 @@
   </h3>
   
   
-  <a id="OmiyaGames_Cryptography_Editor_StringCryptographyEditor_OnInspectorGUI_" data-uid="OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI*"></a>
-  <h4 id="OmiyaGames_Cryptography_Editor_StringCryptographyEditor_OnInspectorGUI" data-uid="OmiyaGames.Cryptography.Editor.StringCryptographyEditor.OnInspectorGUI">OnInspectorGUI()</h4>
+  <a id="OmiyaGames_Cryptography_Editor_StringCryptographyEditor_CreateInspectorGUI_" data-uid="OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI*"></a>
+  <h4 id="OmiyaGames_Cryptography_Editor_StringCryptographyEditor_CreateInspectorGUI" data-uid="OmiyaGames.Cryptography.Editor.StringCryptographyEditor.CreateInspectorGUI">CreateInspectorGUI()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+    <pre><code class="lang-csharp hljs">public override VisualElement CreateInspectorGUI()</code></pre>
   </div>
-  <h3 id="seealso">See Also</h3>
-  <div class="seealso">
-      <div><a class="xref" href="OmiyaGames.Cryptography.StringCryptographer.html">StringCryptographer</a></div>
-  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">VisualElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
