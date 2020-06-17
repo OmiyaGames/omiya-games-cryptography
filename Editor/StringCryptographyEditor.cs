@@ -83,9 +83,10 @@ namespace OmiyaGames.Cryptography.Editor
         private TextField testInputTextField;
         private TextField testOutputTextField;
         private Button copyToClipboardButton;
-        //private AnimBool encryptionGroup, decryptionGroup;
-        //private string testEncryption, testDecryption;
 
+        /// <summary>
+        /// Creates a new StringCryptographer instance in the Unity Project window.
+        /// </summary>
         [MenuItem("Tools/Omiya Games/Create/String Cryptographer")]
         [MenuItem("Assets/Create/Omiya Games/String Cryptographer", priority = 203)]
         private static void CreateStringCryptographer()
@@ -103,73 +104,12 @@ namespace OmiyaGames.Cryptography.Editor
         }
 
         /// <inheritdoc/>
-        //public override void OnInspectorGUI()
-        //{
-        //    // Update the serialized object
-        //    serializedObject.Update();
-
-        //    // Display all fields
-        //    EditorGUILayout.PropertyField(passwordHash);
-        //    EditorGUILayout.PropertyField(saltKey);
-        //    EditorGUILayout.PropertyField(ivKey);
-
-        //    // Display a button to randomize all fields
-        //    EditorGUILayout.Space();
-        //    if (GUILayout.Button("Randomize all fields") == true)
-        //    {
-        //        passwordHash.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
-        //        saltKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.DefaultPasswordLength);
-        //        ivKey.stringValue = StringCryptographer.GetRandomPassword(StringCryptographer.IvKeyBlockSize);
-        //    }
-
-        //    // Display test encryption
-        //    EditorGUILayout.Space();
-        //    EditorHelpers.DrawBoldFoldout(encryptionGroup, "Test Encryption");
-        //    using (EditorGUILayout.FadeGroupScope scope = new EditorGUILayout.FadeGroupScope(encryptionGroup.faded))
-        //    {
-        //        if (scope.visible == true)
-        //        {
-        //            testEncryption = EditorGUILayout.DelayedTextField("Input", testEncryption);
-        //            string output = null;
-        //            if (string.IsNullOrEmpty(testEncryption) == false)
-        //            {
-        //                output = ((StringCryptographer)target).Encrypt(testEncryption);
-        //            }
-        //            EditorGUILayout.TextField("Output", output);
-        //        }
-        //    }
-
-        //    // Display test decryption
-        //    EditorGUILayout.Space();
-        //    EditorHelpers.DrawBoldFoldout(decryptionGroup, "Test Decryption");
-        //    using (EditorGUILayout.FadeGroupScope scope = new EditorGUILayout.FadeGroupScope(decryptionGroup.faded))
-        //    {
-        //        if (scope.visible == true)
-        //        {
-        //            testDecryption = EditorGUILayout.DelayedTextField("Input", testDecryption);
-        //            string output = null;
-        //            if (string.IsNullOrEmpty(testDecryption) == false)
-        //            {
-        //                output = ((StringCryptographer)target).Decrypt(testDecryption);
-        //            }
-        //            EditorGUILayout.TextField("Output", output);
-        //        }
-        //    }
-
-        //    // Apply modifications
-        //    serializedObject.ApplyModifiedProperties();
-        //}
-
         private void OnEnable()
         {
             // Grab all properties
             passwordHash = serializedObject.FindProperty("passwordHash");
             saltKey = serializedObject.FindProperty("saltKey");
             ivKey = serializedObject.FindProperty("ivKey");
-
-            // Setup the animations
-            //encryptionGroup = new AnimBool(false, Repaint);
-            //decryptionGroup = new AnimBool(false, Repaint);
         }
 
         /// <inheritdoc/>
