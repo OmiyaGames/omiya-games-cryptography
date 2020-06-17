@@ -1,5 +1,4 @@
 ﻿using UnityEditor;
-using UnityEditor.AnimatedValues;
 using UnityEngine;
 using System.IO;
 using OmiyaGames.Common.Editor;
@@ -60,6 +59,14 @@ namespace OmiyaGames.Cryptography.Editor
     /// <strong>Author:</strong> Taro Omiya
     /// </term>
     /// <description>Fixing license documentation to be more DocFX friendly.</description>
+    /// </item>
+    /// <item>
+    /// <term>
+    /// <strong>Version:</strong> 0.3.0-preview.1<br/>
+    /// <strong>Date:</strong> 6/16/2020<br/>
+    /// <strong>Author:</strong> Taro Omiya
+    /// </term>
+    /// <description>Converted editor to utilize UIElements. Redesigned the UI a bit.</description>
     /// </item>
     /// </list>
     /// </remarks>
