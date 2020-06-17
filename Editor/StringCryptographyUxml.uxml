@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
     <ui:VisualElement name="Root">
-        <Style src="cryptography-style.uss" />
+        <ui:Style src="cryptography-style.uss" />
         <ui:VisualElement class="spacer" />
         <ui:VisualElement name="RequiredFields" class="indent-1">
-            <ui:Label text="Fields" name="FieldsHeader" class="header" />
+            <ui:Label text="Fields" name="FieldsHeader" class="header" style="-unity-font-style: bold;" />
             <ui:TextField label="Password Hash" tooltip="Secret password used for encryption." name="PasswordHash" />
             <ui:TextField label="Salt Key" tabindex="1" name="SaltKey" tooltip="Used to make the encrypted text harder to guess." />
             <ui:TextField label="IV Key" name="IvKey" tabindex="2" />
@@ -13,7 +13,8 @@
         <ui:VisualElement class="spacer" />
         <ui:VisualElement name="TestGroup">
             <ui:Foldout text="Test Encryption/Decryption" name="TestFoldout" tabindex="3">
-                <ui:TextField picking-mode="Ignore" label="Input" value="filler text" name="TestInput" tabindex="4" multiline="true" />
+                <ui:Label text="Input" name="InputLabel" style="-unity-font-style: bold;" />
+                <ui:TextField picking-mode="Ignore" value="filler text" name="TestInput" tabindex="4" multiline="true" />
                 <ui:VisualElement name="TestButtonGroup">
                     <ui:VisualElement name="TestButtons" style="flex-direction: row; justify-content: space-around; margin-left: 3px; margin-right: 3px; margin-top: 1px; margin-bottom: 1px;">
                         <ui:Button text="Encrypt" name="EncryptButton" tabindex="5" style="width: 50%;" />
@@ -21,9 +22,9 @@
                     </ui:VisualElement>
                     <ui:VisualElement class="spacer" />
                     <ui:VisualElement name="TestOutput">
-                        <ui:TextField picking-mode="Ignore" readonly="true" tabindex="7" multiline="true" name="TestOutput">
-                            <ui:Button text="Copy To Clipboard" name="CopyToClipboard" tabindex="8" />
-                        </ui:TextField>
+                        <ui:Label text="Output" name="OutputLabel" style="-unity-font-style: bold;" />
+                        <ui:TextField picking-mode="Ignore" readonly="true" tabindex="7" multiline="true" name="TestOutput" />
+                        <ui:Button text="Copy To Clipboard" name="CopyToClipboard" tabindex="8" />
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:Foldout>
