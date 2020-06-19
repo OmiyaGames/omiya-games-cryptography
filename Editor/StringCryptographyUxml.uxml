@@ -16,7 +16,12 @@
                 <ui:Label text="Input" name="InputLabel" style="-unity-font-style: bold;" />
                 <ui:TextField picking-mode="Ignore" value="filler text" name="TestInput" tabindex="4" multiline="true" />
                 <ui:VisualElement name="TestButtonGroup">
-                    <ui:VisualElement name="TestButtons" style="flex-direction: row; justify-content: space-around; margin-left: 3px; margin-right: 3px; margin-top: 1px; margin-bottom: 1px;">
+                    <ui:VisualElement name="TestButtons" style="flex-direction: row;
+ justify-content: space-around;
+ margin-left: 3px;
+ margin-right: 3px;
+ margin-top: 1px;
+ margin-bottom: 1px;">
                         <ui:Button text="Encrypt" name="EncryptButton" tabindex="5" style="width: 50%;" />
                         <ui:Button text="Decrypt" name="DecryptButton" tabindex="6" style="width: 50%;" />
                     </ui:VisualElement>
