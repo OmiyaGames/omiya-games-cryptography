@@ -28,11 +28,11 @@ Don't forget to save the project after making edits to the file, so the changes 
 
 ### Testing the asset
 
-The inspector provides the user a chance to test how well the String Cryptographer encrypts and decrypts in the two groups of fields at the bottom foldouts. Simply click on the `Test Encryption` and/or `Test Decryption` to expand them.
+The inspector provides the user a chance to test how well the String Cryptographer encrypts and decrypts in the two groups of fields at the bottom foldouts. Simply click on the `Test Encryption/Decryption` to expand them.
 
 ![Asset Test Fields](https://omiyagames.github.io/omiya-games-cryptography/resources/string-cryptographer/test-asset.png)
 
-For testing encryption, simply enter your text in the input field, and hit enter. The output field will contain the encrypted result. Similarly, for decryption, enter the encrypted text in the input field to get the decrypted text in the output field. Do note that text in the output fields can be copied onto the clipboard (e.g. by tapping ctrl+V on Windows and Linux OS).
+For testing encryption, simply enter your text in the input field, then click `Encrypt`. The output field below will contain the encrypted result. Similarly, for decryption, enter the encrypted text in the input field, then click `Decrypt`. Note the input text field accepts text with multiple lines as well: just hit enter to add a newline. Finally, text in the output fields is read-only: one can highlight and copy the text (e.g. by tapping ctrl+V on Windows and Linux OS), or simply click the `Copy to Clipboard` button to do the same thing.
 
 ## Using the asset in a script
 
