@@ -1,5 +1,11 @@
 # Change Log:
 
+### 0.3.0-preview.1
+
+- New Enhancement:
+    - Updated [String Cryptographer](https://omiyagames.github.io/omiya-games-cryptography/manual/string-cryptographer.html) inspector to utilize `UIElements`, thus giving it a new look.
+    - Updated documentation on [String Cryptographer](https://omiyagames.github.io/omiya-games-cryptography/manual/string-cryptographer.html) accordingly.
+
 ### 0.2.1-preview.1
 
 - New Enhancement:
