@@ -130,18 +130,6 @@ namespace OmiyaGames.Cryptography.Editor
             VisualElement fullTree = visualTree.CloneTree();
             container.Add(fullTree);
 
-            // Grab the PasswordHash text field, and bind it to the appropriate field.
-            TextField serializedTextField = fullTree.Query<TextField>("PasswordHash").First();
-            serializedTextField.bindingPath = "passwordHash";
-
-            // Grab the SaltKey text field, and bind it to the appropriate field.
-            serializedTextField = fullTree.Query<TextField>("SaltKey").First();
-            serializedTextField.bindingPath = "saltKey";
-
-            // Grab the IvKey text field, and bind it to the appropriate field.
-            serializedTextField = fullTree.Query<TextField>("IvKey").First();
-            serializedTextField.bindingPath = "ivKey";
-
             // Compress the foldout by default
             Foldout testFoldout = fullTree.Query<Foldout>("TestFoldout").First();
             testFoldout.value = false;
@@ -166,7 +154,7 @@ namespace OmiyaGames.Cryptography.Editor
             button = fullTree.Query<Button>("DecryptButton").First();
             button.clicked += OnDecryptClicked;
 
-            // FIXME: Grab the CopyToClipboard button, and bind it to a method
+            // Grab the CopyToClipboard button, and bind it to a method
             copyToClipboardButton = fullTree.Query<Button>("CopyToClipboard").First();
             copyToClipboardButton.clicked += OnCopyToClipboardClicked;
             copyToClipboardButton.SetEnabled(false);

@@ -1,9 +1,9 @@
 {
   "name": "com.omiyagames.cryptography",
   "displayName": "Omiya Games - Cryptography",
-  "version": "0.3.0-preview.1",
-  "unity": "2019.4",
-  "unityRelease": "0f1",
+  "version": "0.3.0-preview.2",
+  "unity": "2020.1",
+  "unityRelease": "6f1",
   "description": "A package containing cryptography-related tools.",
   "category": "Tool",
   "type": "tool",
@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "com.unity.ext.nunit": "1.0.0",
-    "com.omiyagames.common": "0.1.4-preview.1"
+    "com.omiyagames.common": "0.2.0-preview.1"
   },
   "scopedRegistries": [
     {
