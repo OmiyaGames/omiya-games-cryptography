@@ -1,5 +1,10 @@
 # Change Log:
 
+### 0.3.0-preview.2
+
+- Refactor:
+    - Some C# code has been reduced by utilizing more UXML features.
+
 ### 0.3.0-preview.1
 
 - New Enhancement:
