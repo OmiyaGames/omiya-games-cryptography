@@ -1,9 +1,10 @@
 {
     "name": "OmiyaGames.Cryptography.Editor",
+    "rootNamespace": "OmiyaGames.Cryptography.Editor",
     "references": [
-        "OmiyaGames",
-        "OmiyaGames.Common.Editor",
-        "OmiyaGames.Cryptography"
+        "GUID:cdda17712c724478898665290e9a02cc",
+        "GUID:90033a3be777c4196bcbfc7e725c4e31",
+        "GUID:7f4dbb4916058a7438cc6b2e9fee8d60"
     ],
     "includePlatforms": [
         "Editor"
