@@ -1,5 +1,9 @@
 # Change Log:
 
+### 1.0.0
+
+- Marking this tool as stable, given it's been battle-tested long enough.
+
 ### 0.3.0-preview.3
 
 - Enhancment: upgrading the assembly definitions and package files.
