@@ -1,7 +1,7 @@
 {
   "name": "com.omiyagames.cryptography",
   "displayName": "Omiya Games - Cryptography",
-  "version": "0.3.0-preview.3",
+  "version": "1.0.0",
   "unity": "2021.1",
   "unityRelease": "9f1",
   "description": "A package containing cryptography-related tools.",
@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "com.unity.ext.nunit": "1.0.0",
-    "com.omiyagames.common": "0.2.0-preview.2"
+    "com.omiyagames.common": "1.0.0"
   },
   "scopedRegistries": [
     {
