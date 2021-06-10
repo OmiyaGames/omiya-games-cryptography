@@ -1,6 +1,6 @@
 # [Omiya Games](https://www.omiyagames.com/) - Cryptography
 
-[![openupm](https://img.shields.io/npm/v/com.omiyagames.cryptography?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.cryptography/) [![Documentation](https://github.com/OmiyaGames/omiya-games-cryptography/workflows/Host%20DocFX%20Documentation/badge.svg)](https://omiyagames.github.io/omiya-games-cryptography/) [![Mirroring](https://github.com/OmiyaGames/omiya-games-cryptography/workflows/Mirroring/badge.svg)](https://bitbucket.org/OmiyaGames/omiya-games-cryptography) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I51KS8F)
+[![openupm](https://img.shields.io/npm/v/com.omiyagames.cryptography?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.omiyagames.cryptography/) [![Documentation](https://github.com/OmiyaGames/omiya-games-cryptography/workflows/Host%20DocFX%20Documentation/badge.svg)](https://omiyagames.github.io/omiya-games-cryptography/) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I51KS8F)
 
 A collection of tools to encrypt and decrypt various things. This includes:
 
